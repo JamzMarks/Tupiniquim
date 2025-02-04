@@ -1,16 +1,16 @@
-
-@font-face {
-    font-family: 'MinhaFonte';
-    src: url('assets/fonts/minha-fonte.woff2') format('woff2'),
-         url('assets/fonts/minha-fonte.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Satoshi", sans-serif;
 }
+
+.section > .title{
+    font-family: "IntegralCF";
+    text-transform: uppercase;
+    /* font-weight: 700; */
+}
+
 /* Working brands */
 .workingBrands{
     background-color: #000000;
@@ -19,8 +19,106 @@
 }
 
 /* New arrivals */
+.productList{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* bbdStyle - Browse by dress style */
+.bbdStyle{
+    background-color: #F0F0F0;
+    border-radius: 40px;
+    width: 92%;
+    padding: 5%;
+}
+.bbdStyle > .container{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center; 
+    gap: 16px;
+}
+.bbdStyle > .container .bbdItem{
+    position: relative;
+    width: 100%;
+}
+.bbdStyle > .container .bbdItem .title{
+    font-weight: 700;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2; /* Garante que o texto fique acima da imagem */
+}
+.bbdStyle > .container .bbdItem img{
+    border-radius: 1em;
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    width: 100%; /* Ou defina um tamanho fixo, se preferir */
+    height: 100%;
+    object-fit: cover; /* Para garantir que a imagem cubra toda a área da div */
+    z-index: 1; /* A imagem ficará atrás do texto */
+}
+
+/* Our happy customers as reviewSection */
+.reviewsSection > .container .reviewCard{
+    background-color: #fff;
+    border: 1px solid #0000001A ;
+
+}
+.reviewsSection > .container .reviewCard .user{
+    display: flex;
+    gap: 10px;
+}
+.reviewsSection > .container .reviewCard .userName{
+    font-weight: 700;
+}
+.reviewsSection > .container .reviewCard .review{
+    font-weight: 400;
+    color: #00000099;
+}
+
+/* Product card  */
+.productCard > .details{
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.productCard > .details .title{
+    font-size: 0.8em;
+    font-weight: 700;
+}
+.productCard > .details .rating{
+    font-size: 0.6em;
+    font-weight: 400;
+}
+
+.productCard > .details .priceContainer{
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+}
+.productCard > .details .priceContainer .price{
+    font-size: 0.5em;
+    font-weight: 700;
+}
+.productCard > .details .priceContainer .discount{
+    color: #00000066;
+}
+
 .productCard img{
     border-radius: 20px;
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 198px;
+    max-height: 200px;
+}
+
+/* View All btn */
+.viewAll{
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #0000001a;
+    border-radius: 62px;
+    width: 218px;
 }

@@ -3,7 +3,7 @@
 @font-face {
     font-family: 'Satoshi';
     src: url('assets/fonts/satoshi/Satoshi-Black.woff2') format('woff2');
-    font-weight: normal;
+    font-weight: 700;
     font-style: bold;
 }
 
@@ -24,15 +24,15 @@
 /* Integral-CF */
 
 @font-face {
-    font-family: 'Satoshi';
-    src: url('assets/fonts/integralCF/Fontspring-DEMO-integralcf-bold.otf') format('otf');
-    font-weight: normal;
+    font-family: 'IntegralCF';
+    src: url('assets/fonts/integralCF/Fontspring-DEMO-integralcf-bold.otf') format('opentype');
+    font-weight: 700;
     font-style: bold;
 }
 
 @font-face {
-    font-family: 'Satoshi';
-    src: url('assets/fonts/integralCF/Fontspring-DEMO-integralcf-regular.otf') format('otf');
+    font-family: 'IntegralCF';
+    src: url('assets/fonts/integralCF/Fontspring-DEMO-integralcf-regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
