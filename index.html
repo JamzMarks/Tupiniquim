@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Shop.co</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
     <header>
@@ -28,33 +29,154 @@
     </header>
     <section>
         <div>
-            <img src="images\thumb\thumb.jpg"/>
+            <!-- <img src="images\thumb\thumb.jpg"/> -->
         </div>
     </section>
-    <section>
+    <!-- Working brands -->
+    <section class="workingBrands">
+        <img src="images\workingBrands\versage.svg" alt="versage"/>
+        <img src="images\workingBrands\zara.svg" alt="zara"/>
+        <img src="images\workingBrands\gucci.svg" alt="gucci"/>
+        <img src="images\workingBrands\prada.svg" alt="prada"/>
+        <img src="images\workingBrands\calvinKlein.svg" alt="calvin klein"/>
+    </section>  
+    <!-- new arrivals -->
 
-    </section>
-    <section>
-        <h2>New arrivals</h2>
-        <div>
+    <section class="newArrivals">
+        
+        <h2 class="title">New arrivals</h2>
+        <div class="productList">
 
-        </div>
-    </section>
-    <section>
-        <h2>Top selling</h2>
-        <div>
+            <article class="productCard">
+                <div class="img-container">
+                    <img src="images\newArrivals\shirt1.png" alt="Black T-shirt with Tape Details"/>
+                </div>
+                <div class="details">
+                    <h3>T-Shirt with Tape Details</h3>
+                    <div class="rating">
+                        <p>4.5/5</p>
+                    </div>
+                    <div class="priceContainer">
+                        <p class="price">$120</p>
+                    </div>
+                </div>
+            </article>
+            <article class="productCard">
+                <div class="img-container">
+                    <img src="images\newArrivals\pants1.png" alt="Dark blue skinny fit jeans"/>
+                </div>
+                <div class="details">
+                    <h3>Skinny fit jeans</h3>
+                    <div class="rating">
+                        <p>3.5/5</p>
+                    </div>
+                    <div class="priceContainer">
+                        <p class="price">$120</p>
+                        <p class="">$260</p>
+                        <div class="discount">
+                            <p>-20%</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="productCard">
+                <div class="img-container">
+                    <img src="images\newArrivals\checkredShirt1.png" alt="Dark blue skinny fit jeans"/>
+                </div>
+                <div class="details">
+                    <h3>Skinny fit jeans</h3>
+                    <div class="rating">
+                        <p>3.5/5</p>
+                    </div>
+                    <div class="priceContainer">
+                        <p class="price">$120</p>
+                        <p class="">$260</p>
+                        <div class="discount">
+                            <p>-20%</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="productCard">
+                <div class="img-container">
+                    <img src="images\newArrivals\shirt2.png" alt="Dark blue skinny fit jeans"/>
+                </div>
+                <div class="details">
+                    <h3>Skinny fit jeans</h3>
+                    <div class="rating">
+                        <p>3.5/5</p>
+                    </div>
+                    <div class="priceContainer">
+                        <p class="price">$120</p>
+                        <p class="">$260</p>
+                        <div class="discount">
+                            <p>-20%</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
             
         </div>
+        <button id="TS_viewAllbtn" class="viewAll">View all</button>
     </section>
+    <!-- Top selling --> 
+    <section >
+        <h2>Top selling</h2>
+        <div class="productList">
 
+        </div>
+        <button id="NA_viewAllbtn" class="viewAll">View all</button>
+    </section>
+    <!-- Browse by dress style -->
     <section>
         <h2>Browse by dress style</h2>
         <div>
 
         </div>
     </section>
+    <!-- Our happy customers -->
     <section>
         <h3>Our happy customers</h3>
+        <div>
+
+        </div>
     </section>
+    <!-- Newsletter -->
+    <form class="newsletter">
+        <div>
+            <h3>Stay upto date about our latest offers</h3>
+        </div>
+        <div>
+            <input type="email"/>
+            <button type="submit">Subscribe to Newsletter</button>
+        </div>
+    </form>
+    <!-- Footer -->
+    <footer>
+        <div class="upperFooter">
+            <div>
+                <p>Shop.co</p>
+                <p>We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
+                <div class="socials">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bottomFooter">
+            <p>Shop.co © 2000-2023, All Rights Reserved</p>
+            <div class="payments">
+                <img src="images\footer\payments\visa.svg" alt="visa">
+                <img src="images\footer\payments\mastercard.svg" alt="mastercard">
+                <img src="images\footer\payments\paypal.svg" alt="paypal">
+                <img src="images\footer\payments\applepay.svg" alt="applepay">
+                <img src="images\footer\payments\googlepay.svg" alt="googlepay">
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

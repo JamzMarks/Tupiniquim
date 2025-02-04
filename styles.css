@@ -1,0 +1,26 @@
+
+@font-face {
+    font-family: 'MinhaFonte';
+    src: url('assets/fonts/minha-fonte.woff2') format('woff2'),
+         url('assets/fonts/minha-fonte.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Working brands */
+.workingBrands{
+    background-color: #000000;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* New arrivals */
+.productCard img{
+    border-radius: 20px;
+    max-width: 300px;
+    max-height: 300px;
+}
