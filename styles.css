@@ -4,12 +4,25 @@
     padding: 0;
     font-family: "Satoshi", sans-serif;
 }
-
-.sectitle{
+.section{
+    width: 100%;  
+    max-width: 90%; 
+    margin: 0 auto; 
+    padding: 0 16px;
+    margin-bottom: 30px;
+}
+@media (min-width: 1024px) {
+    section {
+        padding: 0 32px; /* Aumenta o espaçamento lateral em telas grandes */
+    }
+}
+.section > .title{
     font-family: "IntegralCF";
     text-transform: uppercase;
     font-weight: 700;
-    font-style: bold;
+    text-align: center;
+    text-wrap: true;
+    font-size: 32px;
 }
 
 /* Working brands */
@@ -47,7 +60,8 @@
 }
 .bbdStyle > .container .bbdItem{
     position: relative;
-    width: 100%;
+    width: 90%;
+    max-height: 190px;
 }
 .bbdStyle > .container .bbdItem .title{
     font-weight: 700;
@@ -61,13 +75,14 @@
     /* position: absolute;
     top: 0;
     left: 0; */
-    width: 100%; /* Ou defina um tamanho fixo, se preferir */
+    width: 100%; 
     height: 100%;
-    object-fit: cover; /* Para garantir que a imagem cubra toda a área da div */
-    z-index: 1; /* A imagem ficará atrás do texto */
+    object-fit: cover; 
+    z-index: 1;    
 }
 
 /* Our happy customers as reviewSection */
+
 .reviewsSection > .container .reviewCard{
     background-color: #fff;
     border: 1px solid #0000001A ;
@@ -94,6 +109,7 @@
     align-items: center;
     justify-content: center;
     font-size: 40px;
+    border-radius: 20px;
 }
 .newsletter > .titleContainer{
     text-transform: uppercase;
@@ -111,10 +127,13 @@
     font-size: 20px;
 }
 
-.footerSection > .upperFooter{
+.footer {
+    
+    width: 100%;
+    color: #00000099;
 }
 .footerSection > .upperFooter .container .slogan{
-    color: #00000099;
+    
     font-size: 0.7em;
 }
 .footerSection > .upperFooter .container .socialsList{
@@ -205,10 +224,33 @@
     font-weight: 500;
 }
 
+.bottomDivision{
+    border-bottom: 1px solid #0000001A;
+}
+
 /* Desktop */
 @media (min-width: 1024px) {
     .workingBrands {
         grid-template-columns: repeat(5, 1fr);
         justify-items: center;
+    }
+    .bbdStyle > .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center; 
+        gap: 10px;
+    }
+    .bbdStyle > .container:nth-child(1){
+
+    }
+    .bbdStyle > .container:nth-child(2){
+        grid-column: 2 / span 2;
+    }
+    .bbdStyle > .container:nth-child(3){
+        
+    }
+    .bbdStyle > .container:nth-child(4){
+        
     }
 }
