@@ -1,0 +1,87 @@
+/* Working brands */
+
+/* bbdStyle - Browse by dress style */
+.bbdStyle{
+    background-color: #F0F0F0;
+    border-radius: 40px;
+    width: 92%;
+    padding: 5%;
+}
+.bbdStyle > .container{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center; 
+    gap: 16px;
+}
+.bbdStyle > .container .bbdItem{
+    position: relative;
+    width: 90%;
+    max-height: 190px;
+}
+.bbdStyle > .container .bbdItem .title{
+    font-weight: 700;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2; /* Garante que o texto fique acima da imagem */
+}
+.bbdStyle > .container .bbdItem img{
+    border-radius: 1em;
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+    z-index: 1;    
+}
+
+/* Our happy customers as reviewSection */
+.reviewsSection > .container{
+    display: flex;
+    gap: 10px;
+}
+
+/* Newsletter */
+.newsletter{
+    font-size: 40px;
+    border-radius: 20px;
+}
+
+
+/* Footer */
+.upperFooter .container .slogan{
+    text-wrap: balance;
+}
+.upperFooter .container .socialsList{
+    display: flex;
+    gap: 12px;
+}
+.upperFooter .container .socialsList .socialsBack{
+    background-color: #fff;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid #00000033;
+}
+.upperFooter .linksContainer .title{
+    font-size: 1em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.upperFooter .linksContainer .link{
+    font-size: 0.75em;
+}
+.upperFooter .linksContainer .linkList{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.bottomFooter .copy{
+    color: #00000099;
+}
+.bottomFooter .payments{
+    display: inline-flex;
+    gap: 16px;
+}

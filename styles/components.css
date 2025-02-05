@@ -1,0 +1,58 @@
+/* Product Card */
+.productCard > .details{
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.productCard > .details .title{
+    font-size: 0.8em;
+    font-weight: 700;
+}
+.productCard > .details .rating{
+    font-size: 0.6em;
+    font-weight: 400;
+}
+
+.productCard > .details .priceContainer{
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+}
+.productCard > .details .priceContainer .price{
+    font-size: 0.5em;
+    font-weight: 700;
+}
+.productCard > .details .priceContainer .discount{
+    color: #00000066;
+}
+
+.productCard img{
+    border-radius: 20px;
+    max-width: 198px;
+    max-height: 200px;
+}
+
+/* ReviewCard */
+
+.reviewsSection > .container .reviewCard{
+    background-color: #fff;
+    border: 1px solid #0000001A ;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+
+}
+.reviewsSection > .container .reviewCard .user{
+    display: flex;
+    gap: 10px;
+}
+.reviewsSection > .container .reviewCard .userName{
+    font-weight: 700;
+}
+.reviewsSection > .container .reviewCard .review{
+    font-weight: 400;
+    color: #00000099;
+}

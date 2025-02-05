@@ -1,0 +1,38 @@
+
+/* Satoshi */
+@font-face {
+    font-family: 'Satoshi';
+    src: url('assets/fonts/satoshi/Satoshi-Black.woff2') format('woff2');
+    font-weight: 700;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('assets/fonts/satoshi/Satoshi-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('assets/fonts/satoshi/Satoshi-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Integral-CF */
+
+@font-face {
+    font-family: 'IntegralCF';
+    src: url('assets/fonts/integralCF/IntegralCF-ExtraBold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'IntegralCF';
+    src: url('assets/fonts/integralCF/IntegralCF-Heavy.woff2') format('woff2');
+    font-weight: 800;
+    font-style: bold;
+}
