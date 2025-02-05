@@ -44,7 +44,7 @@
 
     <section class="newArrivals section">
         
-        <h2 class="title">New arrivals</h2>
+        <h2 class="sectitle">New arrivals</h2>
         <div class="productList">
 
             <article class="productCard">
@@ -167,32 +167,86 @@
     </section>
     <!-- Newsletter -->
     <form class="newsletter">
-        <div>
-            <h3>Stay upto date about our latest offers</h3>
+        <div class="titleContainer">
+            <h3 class="title">Stay upto date about our latest offers</h3>
         </div>
-        <div>
-            <input type="email"/>
-            <button type="submit">Subscribe to Newsletter</button>
+        <div class="inputsContainer">
+            <input class="newsInput mainField" type="email" placeholder="Enter your email adress"/>
+            <button class="newsBtn mainField" type="submit">Subscribe to Newsletter</button>
         </div>
     </form>
     <!-- Footer -->
-    <footer>
+    <footer class="footerSection">
         <div class="upperFooter">
-            <div>
-                <p>Shop.co</p>
-                <p>We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
+            <div class="container">
+                <p class="logo">Shop.co</p>
+                <p class="slogan">We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
                 <div class="socials">
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                    <ul class="socialsList">
+                        <li>
+                            <div class="socialsBack">
+                                <img src="images\footer\payments\socials\github.svg" alt="Github">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="socialsBack">
+                                <img src="images\footer\payments\socials\github.svg" alt="Github">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="socialsBack">
+                                <img src="images\footer\payments\socials\github.svg" alt="Github">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="socialsBack">
+                                <img src="images\footer\payments\socials\github.svg" alt="Github">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="linksContainer">
+                <div class="linkItem">
+                    <p class="title">Company</p>
+                    <ul class="linkList">
+                        <li class="link"><a>About</a></li>
+                        <li class="link"><a>Features</a></li>
+                        <li class="link"><a>Works</a></li>
+                        <li class="link"><a>Carrer</a></li>
+                    </ul>
+                </div>
+                <div class="linkItem">
+                    <p class="title">Help</p>
+                    <ul class="linkList">
+                        <li class="link"><a>Customer Support</a></li>
+                        <li class="link"><a>Delivery Details</a></li>
+                        <li class="link"><a>Terms & Conditions</a> </li>
+                        <li class="link"><a>Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="linkItem">
+                    <p class="title">FAQ</p>
+                    <ul class="linkList">
+                        <li class="link"><a>Account</a></li>
+                        <li class="link"><a>Manage Deliveries</a></li>
+                        <li class="link"><a>Orders</a></li>
+                        <li class="link"><a>Payments</a></li>
+                    </ul>
+                </div>
+                <div class="linkItem">
+                    <p class="title">Resources</p>
+                    <ul class="linkList">
+                        <li class="link"><a>Free eBooks</a></li>
+                        <li class="link"><a>Development Tutorial</a></li>
+                        <li class="link"><a>How to - Blog</a></li>
+                        <li class="link"><a>Youtube Playlist</a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="bottomFooter">
-            <p>Shop.co © 2000-2023, All Rights Reserved</p>
+            <p class="copy">Shop.co © 2000-2023, All Rights Reserved</p>
             <div class="payments">
                 <img src="images\footer\payments\visa.svg" alt="visa">
                 <img src="images\footer\payments\mastercard.svg" alt="mastercard">
