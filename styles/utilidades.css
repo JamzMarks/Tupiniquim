@@ -17,9 +17,15 @@
 .bottomDivision{
     border-bottom: 1px solid #0000001A;
 }
+
 .flexContent{
     display: flex;
     flex-direction: column;
+}
+
+.blackBackground{
+    background-color: #000;
+    color: #FFFFFF;
 }
 
 /* View All btn */

@@ -8,6 +8,17 @@ body .container{
     display: grid;
     gap: 80px;
 }
+/* Working brands */
+.workingBrands{
+    width: 100%;
+    max-height: 146;
+    min-height: 122px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px;
+    align-items: center;
+    justify-items: center;
+}
 
 .productList{
     display: flex;
@@ -86,7 +97,7 @@ body .container{
     /* Footer Desktop */
     .footerSection > .upperFooter{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 30% 1fr;
         grid-template-rows: 1;
     }
     .footerSection > .upperFooter .linksContainer{
