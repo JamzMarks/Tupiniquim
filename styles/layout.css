@@ -1,0 +1,100 @@
+body .container{
+    width: 100%;  
+    max-width: 1441px; 
+    margin: 0 auto; 
+    padding: 0 16px;
+    margin-bottom: 30px;
+    justify-content: center;
+    display: grid;
+    gap: 80px;
+}
+
+.productList{
+    display: flex;
+    justify-content: space-evenly;
+}
+/* Newsletter */
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter > .inputsContainer{
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Footer Layout */
+.footerSection{
+    width: 100%;  
+    max-width: 1441px;  
+    margin: 0 auto; 
+    padding: 0 16px;
+    justify-content: center;
+}
+.footerSection > .upperFooter .container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footerSection > .upperFooter .linksContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 20px;
+}
+.footerSection > .bottomFooter{
+    width: 100%;
+    min-height: 132px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+@media(min-width: 1024px) {
+    .mainContainer {
+        padding: 0 32px;
+    }
+    .workingBrands {
+        grid-template-columns: repeat(5, 1fr);
+        justify-items: center;
+    }
+    .bbdStyle > .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center; 
+        gap: 10px;
+    }
+    .newsletter{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        
+    }
+    .newsletter > .title{
+        text-wrap: balance;
+    }
+    /* Footer Desktop */
+    .footerSection > .upperFooter{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1;
+    }
+    .footerSection > .upperFooter .linksContainer{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+    }
+    .footerSection > .bottomFooter{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

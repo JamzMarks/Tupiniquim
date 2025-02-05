@@ -1,0 +1,18 @@
+@import url('fonts.css');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Satoshi", "IntegralFC", sans-serif;
+    font-size: 14px;
+}
+
+ul{list-style: none;}
+
+.footer {
+    width: 100%;
+    color: #00000099;
+    background-color: #F0F0F0;
+}
+

@@ -1,0 +1,41 @@
+
+.logo{
+    font-family: "IntegralCF";
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+}
+.section > .title{
+    font-family: "IntegralCF";
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    text-wrap: true;
+    font-size: 32px;
+}
+
+.bottomDivision{
+    border-bottom: 1px solid #0000001A;
+}
+.flexContent{
+    display: flex;
+    flex-direction: column;
+}
+
+/* View All btn */
+.mainField,
+.viewAll{
+    display: inline-flex;  
+    align-items: center;  
+    justify-content: center; 
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #0000001a;
+    border-radius: 62px;
+    width: calc(100% + 2ch);
+    max-width: 100%;
+    height: 40px;
+    font-weight: 500;
+}

@@ -28,9 +28,9 @@ function insertStarRating(arr){
         }
         for (let i = 0; i < Math.floor(value); i++) {
             const starImg = document.createElement("img");
-            starImg.src = "images/reviews/starFull.svg"; // Caminho da imagem da estrela
+            starImg.src = "images/reviews/starFull.svg";
             starImg.alt = "Star";
-            starImg.classList.add("star-icon"); // Classe para estilização
+            starImg.classList.add("star-icon");
             element.appendChild(starImg);
         }
     })
