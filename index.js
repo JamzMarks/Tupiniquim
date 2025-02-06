@@ -1,6 +1,7 @@
 async function initialize() {
     await insertData('newArrivals', "data/products.json");
-    await insertData('topSelling', "data/products.json" );
+    await insertData('topSelling', "data/topProducts.json" );
+    await insertReview('reviewList', "data/reviews.json");
     getStarRatings();  
 }
 
