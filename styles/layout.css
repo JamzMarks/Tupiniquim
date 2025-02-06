@@ -1,4 +1,5 @@
-body .container{
+header > .container,
+body > .container{
     width: 100%;  
     max-width: 1441px; 
     margin: 0 auto; 
@@ -7,6 +8,23 @@ body .container{
     justify-content: center;
     display: grid;
     gap: 80px;
+}
+/* header thumb */
+.thumb .container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.thumb .infoWrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+.thumb .numbers dl{
+    display: flex;
+    gap: 55px;
 }
 /* Working brands */
 .workingBrands{
@@ -73,6 +91,11 @@ body .container{
 @media(min-width: 1024px) {
     .mainContainer {
         padding: 0 32px;
+    }
+    .thumb .container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        
     }
     .workingBrands {
         grid-template-columns: repeat(5, 1fr);
