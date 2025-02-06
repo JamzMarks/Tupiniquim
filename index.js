@@ -1,3 +1,11 @@
+async function initialize() {
+    await insertData('newArrivals', "data/products.json");
+    await insertData('topSelling', "data/products.json" );
+    getStarRatings();  
+}
+
+initialize();
+
 function getStarRatings() {
     const starElements = document.querySelectorAll(".starRate");
     const ratings = [];
@@ -35,4 +43,3 @@ function insertStarRating(arr){
         }
     })
 }
-const starRatings = getStarRatings();

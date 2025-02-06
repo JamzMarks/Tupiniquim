@@ -28,6 +28,12 @@
 .productCard > .details .priceContainer .discount{
     color: #00000066;
 }
+.productCard > .details .priceContainer .percentage{
+    color: #FF3333;
+    background-color: #FF33331A;
+    border-radius: 62px;
+    padding: 3px 8px;
+}
 
 .productCard img{
     border-radius: 20px;

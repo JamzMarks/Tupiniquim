@@ -12,6 +12,12 @@
 </head>
 <body>
     <header>
+        <div class="signMsg blackBackground ">
+            <div class="container">
+                <p class="msg">Sign up and get 20% off to your first order. <a class="sign">Sign Up Now</a></p>
+                <button class="close"><img src="images/thumb/close.svg"/></button>
+            </div>
+        </div>
         <nav>
             <h1 class="logo">Shop.co</h1>
             <ul>
@@ -30,7 +36,7 @@
             </div>
         </nav>
         <section class="thumb flexContent">
-            <div class="section">
+            <div class="container section">
                 <div class="infoWrapper">
                     <div class="info wrapBalance">
                         <h2 class="title alignLeft">Find clothes that matches your style</h2>
@@ -73,9 +79,9 @@
         <section class="newArrivals section bottomDivision">
             
             <h2 class="title">New arrivals</h2>
-            <div class="productList">
+            <div id="newArrivals" class="productList">
 
-                <article class="productCard">
+                <!-- <article class="productCard">
                     <div class="img-container">
                         <img src="images\newArrivals\shirt1.png" alt="Black T-shirt with Tape Details"/>
                     </div>
@@ -89,74 +95,20 @@
                         </div>
                         <div class="priceContainer">
                             <p class="price">$120</p>
-                        </div>
-                    </div>
-                </article>
-                <article class="productCard">
-                    <div class="img-container">
-                        <img src="images\newArrivals\pants1.png" alt="Dark blue skinny fit jeans"/>
-                    </div>
-                    <div class="details">
-                        <h3 class="title">Skinny fit jeans</h3>
-                        <div class="rating">
-                            <div class="starRate">
-                                <p>3.5</p>
-                            </div>
-                            <p>3.5/5</p>
-                        </div>
-                        <div class="priceContainer">
-                            <p class="price">$120</p>
-                            <p class="price lastPrice">$260</p>
-                            <div class="discount">
+                            <p class="discount">$123</p>
+                            <div class="percentage">
                                 <p>-20%</p>
                             </div>
                         </div>
                     </div>
-                </article>
-                <!-- <article class="productCard">
-                    <div class="img-container">
-                        <img src="images\newArrivals\checkredShirt1.png" alt="Dark blue skinny fit jeans"/>
-                    </div>
-                    <div class="details">
-                        <h3 class="title">Skinny fit jeans</h3>
-                        <div class="rating">
-                            <p>3.5/5</p>
-                        </div>
-                        <div class="priceContainer">
-                            <p class="price">$120</p>
-                            <p class="price lastPrice">$260</p>
-                            <div class="discount">
-                                <p>-20%</p>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <article class="productCard">
-                    <div class="img-container">
-                        <img src="images\newArrivals\shirt2.png" alt="Dark blue skinny fit jeans"/>
-                    </div>
-                    <div class="details">
-                        <h3 class="title">Skinny fit jeans</h3>
-                        <div class="rating">
-                            <p>3.5/5</p>
-                        </div>
-                        <div class="priceContainer">
-                            <p class="price">$120</p>
-                            <p class="price lastPrice">$260</p>
-                            <div class="discount">
-                                <p>-20%</p>
-                            </div>
-                        </div>
-                    </div>
-                </article> -->
-                
+                </article>                -->
             </div>
             <button id="TS_viewAllbtn" class="viewAll">View all</button>
         </section>
         <!-- Top selling --> 
         <section class="section">
             <h2 class="title">Top selling</h2>
-            <div class="productList">
+            <div id="topSelling" class="productList">
 
             </div>
             <button id="NA_viewAllbtn" class="viewAll">View all</button>
@@ -302,6 +254,8 @@
             </div>
         </div>
     </footer>
+    <script src="utils.js"></script>
+    <script src="products.js"></script>
     <script src="index.js"></script>
 </body>
 </html>

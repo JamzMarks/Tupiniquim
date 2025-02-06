@@ -1,23 +1,34 @@
+.signMsg{
+    height: 34px;
+    display: flex;
+    align-items: center;
+}
+.signMsg .container{
+    width: 100%;  
+    max-width: 1441px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signMsg .sign{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.signMsg .close{
+    background-color: #000;
+    border: none;
+}
 /* Mobile First */
 .thumb {
     background-color: #F2F0F1;
 }
 
-.thumb .infoWrapper {
-    text-align: center; /* Centraliza texto no mobile */
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 100%;
-}
 .thumb .info .wrapBalance .title,
 .thumb .info{
     text-align: left;
 }
-.thumb .numbers dl{
-    display: flex;
-    gap: 55px;
-}
+
 .thumb .item{
     border-right: 1px solid #0000001A;
 }
