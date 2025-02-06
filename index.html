@@ -76,7 +76,7 @@
     </header>
     <div class="container">
     <!-- new arrivals -->
-        <section class="newArrivals section bottomDivision">
+        <section class="newArrivals section flexContainer bottomDivision">
             
             <h2 class="title">New arrivals</h2>
             <div id="newArrivals" class="productList">
@@ -103,18 +103,18 @@
                     </div>
                 </article>                -->
             </div>
-            <button id="TS_viewAllbtn" class="viewAll">View all</button>
+            <button id="TS_viewAllbtn" class="btns btnWhite">View all</button>
         </section>
         <!-- Top selling --> 
-        <section class="section">
+        <section class="section flexContainer">
             <h2 class="title">Top selling</h2>
             <div id="topSelling" class="productList">
 
             </div>
-            <button id="NA_viewAllbtn" class="viewAll">View all</button>
+            <button id="NA_viewAllbtn" class="btns btnWhite">View all</button>
         </section>
         <!-- Browse by dress style -->
-        <section class="bbdStyle section">
+        <section class="bbdStyle section flexContainer">
             <h2 class="title">Browse by dress style</h2>
             <div class="container">
                 <div class="bbdItem">
@@ -136,9 +136,9 @@
             </div>
         </section>
         <!-- Our happy customers -->
-        <section class="reviewsSection section">
+        <section class="reviewsSection section flexContainer">
             <h3 class="title">Our happy customers</h3>
-            <div class="container">
+            <div id="reviewList" class="container">
                 <article class="reviewCard">
                     <div class="starRate">
                         <p>4.5</p>
@@ -169,8 +169,8 @@
         <form class="newsletter section blackBackground">
             <h3 class="title">Stay upto date about our latest offers</h3>
             <div class="inputsContainer">
-                <input class="newsInput mainField" type="email" placeholder="Enter your email adress"/>
-                <button class="newsBtn mainField" type="submit">Subscribe to Newsletter</button>
+                <input class="newsInput inputFields btnWhite" type="email" placeholder="Enter your email adress"/>
+                <button class="newsBtn btns btnWhite" type="submit">Subscribe to Newsletter</button>
             </div>
         </form>
         <div class="footerSection">
@@ -256,6 +256,7 @@
     </footer>
     <script src="utils.js"></script>
     <script src="products.js"></script>
+    <script src="review.js"></script>
     <script src="index.js"></script>
 </body>
 </html>

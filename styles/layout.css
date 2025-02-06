@@ -7,7 +7,7 @@ body > .container{
     margin-bottom: 30px;
     justify-content: center;
     display: grid;
-    gap: 80px;
+    gap: 40px;
 }
 /* header thumb */
 .thumb .container{
@@ -39,8 +39,9 @@ body > .container{
 }
 
 .productList{
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
 }
 /* Newsletter */
 .newsletter{
@@ -87,7 +88,11 @@ body > .container{
     align-items: center;
     gap: 10px;
 }
-
+@media (min-width: 768px) {
+    .productList {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 @media(min-width: 1024px) {
     .mainContainer {
         padding: 0 32px;
@@ -100,6 +105,9 @@ body > .container{
     .workingBrands {
         grid-template-columns: repeat(5, 1fr);
         justify-items: center;
+    }
+    .productList{
+        grid-template-columns: repeat(4, 1fr);
     }
     .bbdStyle > .container{
         display: grid;
@@ -132,3 +140,5 @@ body > .container{
         justify-content: space-between;
     }
 }
+
+
