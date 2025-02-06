@@ -1,4 +1,4 @@
-body .container{
+body > .container{
     width: 100%;  
     max-width: 1441px; 
     margin: 0 auto; 
@@ -8,6 +8,8 @@ body .container{
     display: grid;
     gap: 80px;
 }
+
+
 /* Working brands */
 .workingBrands{
     width: 100%;

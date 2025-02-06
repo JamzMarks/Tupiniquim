@@ -1,3 +1,44 @@
+/* Mobile First */
+.thumb {
+    background-color: #F2F0F1;
+}
+
+.thumb .infoWrapper {
+    text-align: center; /* Centraliza texto no mobile */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+.thumb .info .wrapBalance .title,
+.thumb .info{
+    text-align: left;
+}
+.thumb .numbers dl{
+    display: flex;
+    gap: 55px;
+}
+.thumb .item{
+    border-right: 1px solid #0000001A;
+}
+.thumb .item:last-child{
+    border: none;
+}
+.thumb .item dt{
+    font-weight: 700;
+    font-size: 1.7em;
+}
+.thumb .imgWrapper {
+    width: 100%;
+    max-width: 400px;
+}
+
+.thumb .imgWrapper img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
 /* Working brands */
 
 /* bbdStyle - Browse by dress style */
@@ -25,7 +66,7 @@
     left: 10px;
     z-index: 2; /* Garante que o texto fique acima da imagem */
 }
-.bbdStyle > .container .bbdItem img{
+.bbdStyle > .container .bbdItem > img{
     border-radius: 1em;
     width: 100%; 
     height: 100%;
