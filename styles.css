@@ -51,14 +51,19 @@
     border-radius: 10px;
 }
 
+.produdctSection{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 /* Working brands */
 
 /* bbdStyle - Browse by dress style */
 .bbdStyle{
     background-color: #F0F0F0;
     border-radius: 40px;
-    width: 92%;
-    padding: 5%;
+    padding: 5% 3%;
 }
 .bbdStyle > .container{
     display: grid;
@@ -76,7 +81,7 @@
     position: absolute;
     top: 10px;
     left: 10px;
-    z-index: 2; /* Garante que o texto fique acima da imagem */
+    z-index: 2;
 }
 .bbdStyle > .container .bbdItem > img{
     border-radius: 1em;
@@ -86,19 +91,31 @@
     z-index: 1;    
 }
 
-/* Our happy customers as reviewSection */
-.reviewsSection > .container{
+.slidesTitle{
     display: flex;
-    gap: 10px;
+    justify-content: space-between;
 }
-
+.arrows{
+    display: flex;
+    gap: 16px;
+}
+.arrows .arrowBtn{
+    background: none;
+    border: none;
+    color: #000;
+    cursor: pointer;
+}
+.arrows .arrowBtn:hover{
+    box-shadow: 0px 4px 8px rgb(255, 255, 255);
+    transform: translateY(-2px);
+}
 /* Newsletter */
-.newsletter{
-    font-size: 40px;
-    border-radius: 20px;
+.newsletter .title{
+    text-align: left;
 }
-
-
+.newsletter .newsBtn{
+    min-width: 100%;
+}
 /* Footer */
 .upperFooter .container .slogan{
     text-wrap: balance;
@@ -108,12 +125,36 @@
     gap: 12px;
 }
 .upperFooter .container .socialsList .socialsBack{
+    display: flex;
+    justify-content: center;
     background-color: #fff;
     width: 28px;
     height: 28px;
     border-radius: 50%;
     border: 1px solid #00000033;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
 }
+.upperFooter .container .socialsList .socialsBack:nth-of-type(2){
+    background-color: #000;
+    color: #fff;
+    border: none;
+    
+}
+.upperFooter .container .socialsList .socialsBack img{
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+    
+}
+.upperFooter .container .socialsList .socialsBack:hover{
+    box-shadow: 0 0 3px 1px #0000004d;
+}
+
 .upperFooter .linksContainer .title{
     font-size: 1em;
     letter-spacing: 2px;
@@ -124,7 +165,15 @@
     text-align: left;
 }
 .upperFooter .linksContainer .link{
-    font-size: 0.75em;
+    font-size: 0.75em;  
+}
+.upperFooter .linksContainer .link a{
+    display: inline;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+.upperFooter .linksContainer .link a:hover{
+    color: #000;
 }
 .upperFooter .linksContainer .linkList{
     display: flex;
@@ -137,4 +186,14 @@
 .bottomFooter .payments{
     display: inline-flex;
     gap: 16px;
+}
+@media (min-width: 768px) {
+    .bottomFooter .payments,
+    .bottomFooter .copy{
+        padding-top: 25px;
+        align-self: flex-start;
+    }
+}
+@media(min-width: 1024px) {
+
 }

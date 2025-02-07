@@ -76,7 +76,7 @@
     </header>
     <div class="container">
     <!-- new arrivals -->
-        <section class="newArrivals section flexContainer bottomDivision">
+        <section class="productSection section flexContainer bottomDivision">
             
             <h2 class="title">New arrivals</h2>
             <div id="newArrivals" class="productList">
@@ -106,7 +106,7 @@
             <button id="TS_viewAllbtn" class="btns btnWhite">View all</button>
         </section>
         <!-- Top selling --> 
-        <section class="section flexContainer">
+        <section class="productSection section flexContainer">
             <h2 class="title">Top selling</h2>
             <div id="topSelling" class="productList">
 
@@ -115,7 +115,7 @@
         </section>
         <!-- Browse by dress style -->
         <section class="bbdStyle section flexContainer">
-            <h2 class="title">Browse by dress style</h2>
+            <h2 class="title wrapBalance">Browse by dress style</h2>
             <div class="container">
                 <div class="bbdItem">
                     <p class="title">Casual</p>
@@ -137,9 +137,19 @@
         </section>
         <!-- Our happy customers -->
         <section class="reviewsSection section flexContainer">
-            <h3 class="title">Our happy customers</h3>
-            <div id="reviewList" class="container">
-                <article class="reviewCard">
+            <div class="slidesTitle">
+                <h3 class="title">Our happy customers</h3>
+                <div class="arrows">
+                    <button class="arrowBtn">
+                        <img src="images\reviews\left-arrow.svg" alt="left arrow"/>
+                    </button>
+                    <button class="arrowBtn">
+                        <img src="images\reviews\right-arrow.svg" alt="right arrow"/>
+                    </button>
+                </div>  
+            </div>   
+            <div id="reviewList" class="reviewList container">
+                <!-- <article class="reviewCard">
                     <div class="starRate">
                         <p>4.5</p>
                     </div>
@@ -148,17 +158,7 @@
                         <img src="images\reviews\check.svg" alt="" >
                     </div>
                     <p class="review">"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
-                </article>
-                <article class="reviewCard">
-                    <div class="starRate">
-                        <p>4.5</p>
-                    </div>
-                    <div class="user">
-                        <p class="userName"><stron>Sarah M.</stron></p>
-                        <img src="images\reviews\check.svg" alt="" >
-                    </div>
-                    <p class="review">"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
-                </article>
+                </article> -->
             </div>
         </section>
         <!-- Newsletter -->
@@ -166,39 +166,32 @@
     </div>
     <!-- Footer -->
     <footer class="footer">
-        <form class="newsletter section blackBackground">
-            <h3 class="title">Stay upto date about our latest offers</h3>
-            <div class="inputsContainer">
-                <input class="newsInput inputFields btnWhite" type="email" placeholder="Enter your email adress"/>
-                <button class="newsBtn btns btnWhite" type="submit">Subscribe to Newsletter</button>
-            </div>
-        </form>
+        
         <div class="footerSection">
+            <form class="newsletter section blackBackground alignLeft">
+                <h3 class="title wrapBalance ">Stay upto date about our latest offers</h3>
+                <div class="inputsContainer">
+                    <input class="newsInput inputFields inputWhite" type="email" placeholder="Enter your email adress"/>
+                    <button class="newsBtn btns btnWhite" type="submit">Subscribe to Newsletter</button>
+                </div>
+            </form>
             <div class="upperFooter bottomDivision">
                 <div class="container">
                     <p class="logo">Shop.co</p>
                     <p class="slogan">We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
                     <div class="socials">
                         <ul class="socialsList">
-                            <li>
-                                <div class="socialsBack">
-                                    <img src="images\footer\payments\socials\twitter.svg" alt="twitter">
-                                </div>
+                            <li class="socialsBack">
+                                <img src="images\footer\payments\socials\twitter.svg" alt="twitter">
                             </li>
-                            <li>
-                                <div class="socialsBack bgBlack">
-                                    <img src="images\footer\payments\socials\facebook.svg" alt="facebook">
-                                </div>
+                            <li class="socialsBack">
+                                <img src="images\footer\payments\socials\facebook.svg" alt="facebook">
                             </li>
-                            <li>
-                                <div class="socialsBack">
-                                    <img src="images\footer\payments\socials\instagram.svg" alt="instagram">
-                                </div>
+                            <li class="socialsBack">
+                                <img src="images\footer\payments\socials\instagram.svg" alt="instagram">
                             </li>
-                            <li>
-                                <div class="socialsBack">
-                                    <img src="images\footer\payments\socials\github.svg" alt="Github">
-                                </div>
+                            <li class="socialsBack">
+                                <img src="images\footer\payments\socials\github.svg" alt="Github">
                             </li>
                         </ul>
                     </div>
