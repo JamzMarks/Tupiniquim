@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop.co</title>
     <link rel="stylesheet" type="text/css" href="styles\base.css">
+    <link rel="stylesheet" type="text/css" href="styles\footer\footer.css">
     <link rel="stylesheet" type="text/css" href="styles\layout.css">
     <link rel="stylesheet" type="text/css" href="styles\components.css">
     <link rel="stylesheet" type="text/css" href="styles\utilidades.css">
@@ -12,27 +13,35 @@
 </head>
 <body>
     <header>
-        <div class="signMsg blackBackground ">
-            <div class="container">
+        <div id="signMsg" class="signMsg blackBackground">
+            <div class="wrapper container">
                 <p class="msg">Sign up and get 20% off to your first order. <a class="sign">Sign Up Now</a></p>
-                <button class="close"><img src="images/thumb/close.svg"/></button>
+                <button id="signMsgBtn" class="close displayNone"><img src="images/thumb/close.svg"/></button>
             </div>
         </div>
-        <nav>
-            <h1 class="logo">Shop.co</h1>
-            <ul>
-                <li>Shop</li>
-                <li>On Sale</li>
-                <li>New Arrivals</li>
-                <li>Brands</li>
-            </ul>
-        
-            <div>
-                <input type="text">
+        <nav class="navigation">
+            <div class="logo-container">
+                <div class="hamburguerMenu hidden">
+                    <button>
+                        <img id="menu-toggle" src="images\thumb\hamburguer.svg" alt="menu">
+                    </button>
+                </div>
+                <h1 class="logo">Shop.co</h1>
             </div>
-            <div>
-                <button>Shop</button>
-                <button>Profile</button>
+            <!-- <ul class="navLinks">
+                <li class="links"><a>Shop</a></li>
+                <li class="links"><a>On Sale</a></li>
+                <li class="links"><a>New Arrivals</a></li>
+                <li class="links"><a>Brands</a></li>
+            </ul> -->
+        
+            
+            <div class="navBtns">
+                <div class="searchBar">
+                    <input type="text" placeholder="Search for products..." class="inputFields search">
+                </div>
+                <button class="navBtn"><img src="images\thumb\cart.svg" alt="cart"></button>
+                <button class="navBtn"><img src="images\thumb\user.svg" alt="profile picture"></button>
             </div>
         </nav>
         <section class="thumb flexContent">
@@ -40,7 +49,7 @@
                 <div class="infoWrapper">
                     <div class="info wrapBalance">
                         <h2 class="title alignLeft">Find clothes that matches your style</h2>
-                        <p class="alignLeft">Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
+                        <p class="paragraph alignLeft">Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
                         <button class="btns btnBlack">Shop Now</button>
                     </div>
                     <div class="numbers">
@@ -61,7 +70,7 @@
                     </div>
                 </div>
                 <div class="imgWrapper">
-                    <img src="images\thumb\thumb.jpg"/>
+                    <!-- <img src="images\thumb\thumb.jpg" alt="thumbnail"/> -->
                 </div>
             </div>
         </section>
@@ -116,22 +125,18 @@
         <!-- Browse by dress style -->
         <section class="bbdStyle section flexContainer">
             <h2 class="title wrapBalance">Browse by dress style</h2>
-            <div class="container">
-                <div class="bbdItem">
-                    <p class="title">Casual</p>
-                    <img src="images\bbdStyle\casual.png" alt=""/>
+            <div class="grid-bbd">
+                <div class="bbdItem casual">
+                    <p class="titleCard">Casual</p>
                 </div>
-                <div class="bbdItem">
-                    <p class="title">Formal</p>
-                    <img src="images\bbdStyle\formal.png" alt=""/>
+                <div class="bbdItem formal">
+                    <p class="titleCard">Formal</p>
                 </div>
-                <div class="bbdItem">
-                    <p class="title">Party</p>
-                    <img src="images\bbdStyle\party.png" alt=""/>
+                <div class="bbdItem party">
+                    <p class="titleCard">Party</p>
                 </div>
-                <div class="bbdItem">
-                    <p class="title">Gym</p>
-                    <img src="images\bbdStyle\gym.png" alt=""/>
+                <div class="bbdItem gym">
+                    <p class="titleCard">Gym</p>
                 </div>
             </div>
         </section>
@@ -165,20 +170,21 @@
         
     </div>
     <!-- Footer -->
-    <footer class="footer">
-        
-        <div class="footerSection">
+    <footer class="footer"> 
+        <div class="container">
             <form class="newsletter section blackBackground alignLeft">
                 <h3 class="title wrapBalance ">Stay upto date about our latest offers</h3>
                 <div class="inputsContainer">
-                    <input class="newsInput inputFields inputWhite" type="email" placeholder="Enter your email adress"/>
+                    <input class="newsInput inputFields emailInput inputWhite" type="email" placeholder="Enter your email adress"/>
                     <button class="newsBtn btns btnWhite" type="submit">Subscribe to Newsletter</button>
                 </div>
             </form>
             <div class="upperFooter bottomDivision">
-                <div class="container">
-                    <p class="logo">Shop.co</p>
-                    <p class="slogan">We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
+                <div class="wrapper-logo">
+                    <div class="ls_container">
+                        <p class="logo">Shop.co</p>
+                        <p class="slogan">We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
+                    </div>
                     <div class="socials">
                         <ul class="socialsList">
                             <li class="socialsBack">

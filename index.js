@@ -3,6 +3,8 @@ async function initialize() {
     await insertData('topSelling', "data/topProducts.json" );
     await insertReview('reviewList', "data/reviews.json");
     getStarRatings();  
+
+    
 }
 
 initialize();
@@ -44,3 +46,24 @@ function insertStarRating(arr){
         }
     })
 }
+
+document.getElementById("signMsgBtn").addEventListener("click", function() {
+    document.getElementById("signMsg").remove();
+});
+
+function checkScreenSize() {
+    const element = document.getElementById("signMsgBtn");
+
+    if (!element) return;
+    if (window.innerWidth > 768) {
+        if (!element.classList.contains("displayNone")) {
+            element.classList.add("displayNone");
+        }
+    } else {
+        if (element.classList.contains("displayNone")) {
+            element.classList.remove("displayNone");
+        }
+    }
+}
+window.addEventListener("resize", checkScreenSize);
+window.addEventListener("load", checkScreenSize);

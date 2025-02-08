@@ -1,0 +1,135 @@
+/* Footer */
+.footer {
+  width: 100%;
+  color: #00000099;
+  background-color: #f0f0f0;
+  margin-top: 146px;
+}
+/* Newsletter */
+.newsletter {
+  position: relative;
+    top: -50%; /* Levanta a newsletter 50px acima do footer */
+    z-index: 1; /* Mantém a newsletter acima de outros elementos */
+  border-radius: 20px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1441px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+  gap: 32px;
+  min-height: 190px;
+  max-height: 298px;
+}
+
+.newsletter > .inputsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ls_container {
+  display: grid;
+  gap: 14px;
+}
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 16px;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  gap: 20px;
+}
+.upperFooter {
+  display: grid;
+  gap: 25px;
+  padding-bottom: 40px;
+}
+.upperFooter .wrapper-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.upperFooter .linksContainer .link {
+  font-size: 0.75em;
+}
+.upperFooter .linksContainer .link a {
+  display: inline;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+.upperFooter .linksContainer .link a:hover {
+  color: #000;
+}
+.upperFooter .linksContainer .linkList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+
+.upperFooter .linksContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 24px;
+}
+.bottomFooter {
+  width: 100%;
+  min-height: 132px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.bottomFooter .copy {
+  color: #00000099;
+}
+.bottomFooter .payments {
+  display: inline-flex;
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .footer{
+    margin-top: 95px;
+  }
+  .newsletter {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 36px 64px;
+  }
+  .upperFooter .linksContainer {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Footer Desktop */
+  
+  .newsletter > .title {
+    text-wrap: balance;
+  }
+  .container {
+    gap: 0px;
+  }
+  .upperFooter {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    grid-template-rows: 1;
+  }
+  .bottomFooter {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
