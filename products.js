@@ -17,12 +17,9 @@ const classes = {
     }
 }
 
-
-
-
-async function insertData(elementId, dataUrl){
-    const data = await fetchData(dataUrl);
-    const element = document.getElementById(elementId);
+async function insertData(element, data){
+    // const data = await fetchData(dataUrl);
+    // const element = document.getElementById(elementId);
 
     data.forEach(item => {
         const {title, price, image, discount, rating, percentage} = item;
@@ -60,6 +57,7 @@ async function insertData(elementId, dataUrl){
 
         ratingContainer.appendChild(starRate);
         ratingContainer.appendChild(ratingText);
+        
 
         const priceContainer = document.createElement('div');
         priceContainer.classList.add('priceContainer');
@@ -94,8 +92,8 @@ async function insertData(elementId, dataUrl){
         productCard.appendChild(imgContainer);
         productCard.appendChild(details);
 
-
         element.appendChild(productCard);
+        getStarRating(starRate);
     });
     
 }

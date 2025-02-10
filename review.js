@@ -51,5 +51,6 @@ async function insertReview(elementId, dataUrl){
         reviewCard.appendChild(reviewElement);
 
         element.appendChild(reviewCard);
+        getStarRating(rateElement);
     });
 }

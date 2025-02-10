@@ -45,7 +45,7 @@
       },
       {
         "id": 5,
-        "title": "VERTICAL STRIPED SHIRT",
+        "title": "VERTICAL STRIPED SHIRT 2",
         "price": 212,
         "image": "images/products/shirt3.png",
         "discount": 20,
@@ -56,8 +56,8 @@
       },
       {
         "id": 6,
-        "title": "COURAGE GRAPHIC T-SHIRT",
-        "price": 145,
+        "title": "COURAGE GRAPHIC T-SHIRT 2",
+        "price": 200,
         "image": "images/products/shirt4.png",
         "discount": 0,
         "rating": {
@@ -67,7 +67,7 @@
       },
       {
         "id": 7,
-        "title": "LOOSE FIT BERMUDA SHORTS",
+        "title": "LOOSE FIT BERMUDA SHORTS 2",
         "price": 80,
         "image": "images/products/jeans2.png",
         "discount": 0,
@@ -78,8 +78,8 @@
       },
       {
         "id": 8,
-        "title": "FADED SKINNY JEANS",
-        "price": 210,
+        "title": "FADED SKINNY JEANS 2",
+        "price": 311,
         "image": "images/products/jeans3.png",
         "discount": 0,
         "rating": {
