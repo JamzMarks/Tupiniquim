@@ -45,11 +45,10 @@
   display: grid;
   grid-template-areas:
         "newsletter"
-        "gap1"
         "upperFooter"
-        "gap2"
+        "gap"
         "bottomFooter";
-  grid-template-rows: auto 0px auto 20px auto;
+  grid-template-rows: auto auto 20px auto;
   grid-template-columns: 1fr;
 }
 .upperFooter {
