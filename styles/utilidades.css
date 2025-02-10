@@ -17,7 +17,9 @@
 .alignLeft{
     text-align: left;
 }
-
+.marginAuto{
+    margin: 0 auto;
+}
 .bottomDivision{
     border-bottom: 1px solid #0000001A;
 }

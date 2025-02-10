@@ -107,16 +107,30 @@
     font-size: 24px;
 }
 .casual {
-    background: url('/images/bbdStyle/casual.png') center/cover no-repeat;
+    background: url('/images/bbdStyle/casual.png');
+    background-repeat: no-repeat;
+    background-position: right right;
+    background-size: cover;
 }
 .formal {
-    background: url('/images/bbdStyle/formal.png') center/cover no-repeat;
+    background: url('/images/bbdStyle/formal.png');
+    background-repeat: no-repeat;
+    background-position: 
+    10 30,
+    center;
+    /* background-size: cover; */
 }
 .party {
-    background: url('/images/bbdStyle/party.png') center/cover no-repeat;
+    background: url('/images/bbdStyle/party.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 .gym {
-    background: url('/images/bbdStyle/gym.png') center/cover no-repeat;
+    background: url('/images/bbdStyle/gym.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
 }
 
 /* Reviews */
@@ -214,11 +228,7 @@
     .party{
         grid-column: span 2;
     } 
-    .bottomFooter .payments,
-    .bottomFooter .copy{
-        padding-top: 25px;
-        align-self: flex-start;
-    }
+    
 }
 @media(min-width: 1024px) {
     .thumb .info{
