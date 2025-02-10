@@ -1,33 +1,3 @@
-
-.navigation{
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  max-width: 1240px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-}
-.navLinks,
-.searchBar,
-.logo-container,
-.navBtns{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-}
-.navBtns{
-  justify-content: right;
-}
-.logo-container{
-  justify-content: left;
-}
-.logo-container img{
-  width: 24;
-  height: 24;
-}
-
 /* header thumb */
 .thumb .container {
   max-width: 1240px;
@@ -42,6 +12,7 @@
   flex-direction: column;
   gap: 20px;
   width: 100%;
+  padding: 0 16px;
 }
 .thumb .numbers dl {
   display: grid;
@@ -80,11 +51,6 @@
   grid-template-rows: 1fr;
   gap: 10px;
 }
-
-.footer {
-  overflow: visible;
-}
-
 
 @media (min-width: 768px) {
   .workingBrands {

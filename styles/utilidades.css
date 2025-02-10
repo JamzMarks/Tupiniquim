@@ -39,9 +39,6 @@
     align-items: center;
     justify-items: center;
 }
-.hidden{
-    visibility: none;
-}
 
 .blackBackground{
     background-color: #000;

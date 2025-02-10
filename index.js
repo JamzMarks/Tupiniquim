@@ -51,19 +51,7 @@ document.getElementById("signMsgBtn").addEventListener("click", function() {
     document.getElementById("signMsg").remove();
 });
 
-function checkScreenSize() {
-    const element = document.getElementById("signMsgBtn");
-
-    if (!element) return;
-    if (window.innerWidth > 768) {
-        if (!element.classList.contains("displayNone")) {
-            element.classList.add("displayNone");
-        }
-    } else {
-        if (element.classList.contains("displayNone")) {
-            element.classList.remove("displayNone");
-        }
-    }
-}
-window.addEventListener("resize", checkScreenSize);
-window.addEventListener("load", checkScreenSize);
+document.getElementById("menuButton").addEventListener("click", function(){
+    let checkbox = document.getElementById("menuCheckbox");
+    checkbox.checked = !checkbox.checked;
+})

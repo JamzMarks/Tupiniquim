@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop.co</title>
     <link rel="stylesheet" type="text/css" href="styles\base.css">
+    <link rel="stylesheet" type="text/css" href="styles\nav\nav.css">
     <link rel="stylesheet" type="text/css" href="styles\footer\footer.css">
     <link rel="stylesheet" type="text/css" href="styles\layout.css">
     <link rel="stylesheet" type="text/css" href="styles\components.css">
@@ -12,28 +13,41 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <header class="header">
+    <header>
         <div id="signMsg" class="signMsg blackBackground">
             <div class="wrapper container">
                 <p class="msg">Sign up and get 20% off to your first order. <a class="sign">Sign Up Now</a></p>
-                <button id="signMsgBtn" class="close displayNone"><img src="images/thumb/close.svg"/></button>
+                <button id="signMsgBtn" class="close"><img src="images/thumb/close.svg"/></button>
             </div>
         </div>
         <nav class="navigation">
             <div class="logo-container">
-                <div class="hamburguerMenu hidden">
-                    <button>
-                        <img id="menu-toggle" src="images\thumb\hamburguer.svg" alt="menu">
+                <div class="hamburguerMenu">
+                    <button class="displayNoneMobile" id="menuButton">
+                        <div class="menuToggle">
+                            <input type="checkbox" id="menuCheckbox"/>
+                            <label for="menuCheckbox" class="menuIcon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </label>
+                            <ul class="menuMobile">
+                              <li class="links"><a>Shop</a></li>
+                              <li class="links"><a>On Sale </a></li>
+                              <li class="links"><a>New Arrivals</a></li>
+                              <li class="links"><a>Brands</a></li>
+                            </ul>
+                          </div>
                     </button>
                 </div>
                 <h1 class="logo">Shop.co</h1>
             </div>
-            <!-- <ul class="navLinks">
+            <ul class="navLinks">
                 <li class="links"><a>Shop</a></li>
                 <li class="links"><a>On Sale</a></li>
                 <li class="links"><a>New Arrivals</a></li>
                 <li class="links"><a>Brands</a></li>
-            </ul> -->
+            </ul>
         
             
             <div class="navBtns">
@@ -86,6 +100,7 @@
         </section> 
     </header>
     <div class="container">
+        
     <!-- new arrivals -->
         <section class="productSection section flexContainer bottomDivision">
             
