@@ -1,4 +1,5 @@
 .navigation{
+    background-color: #ffffff;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
@@ -7,6 +8,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
+    min-height: 48px;
   }
   .searchBar,
   .logo-container,
@@ -94,24 +96,17 @@
   {
     transform: none;
   }
+  .searchMobile{
+    color: black;
+  }
+  .searchBar,
   .navLinks{
     display: none;
   }
-  
-@media (min-width: 768px) {
-    .displayNoneMobile{
-        display: none;
-    }
-    .navLinks{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 12px;
-    }
-    .navigation{
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
+  .navLinks .links a{
+    font-size: 16px;
+  }
+
   /* header thumb */
   .thumb .container {
     max-width: 1240px;
@@ -132,3 +127,76 @@
     grid-template-columns: repeat(3, 1fr);
     justify-items: stretch;
   }
+  .thumb {
+    background-color: #F2F0F1;
+}
+.thumb .info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+    margin-top: 40px;
+}
+.thumb .info .title{
+    font-size: 34px;
+    text-align: left;
+}
+.thumb .info .paragraph{
+    color: #00000099;
+}
+.numbers .item{
+    border-right: 1px solid #0000001A;
+}
+.numbers .item:last-child{
+    border: none;
+}
+.numbers .item dt{
+    font-weight: 700;
+    font-size: 1.7em;
+}
+.thumb .imgWrapper {
+  display: flex;
+    width: 100%;
+    /* max-width: 400px; */
+    /* height: 448px;
+    background: url('images/thumb/thumb.jpg') top/cover no-repeat; */
+}
+
+.thumb .imgWrapper img {
+  min-height: 448px;
+  max-height: 663px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 10px;
+  align-self: flex-end;
+}
+
+@media (min-width: 768px) {
+  .displayNoneMobile{
+      display: none;
+  }
+  .searchBar,
+  .navLinks{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+  }
+  .searchMobile{
+    display: none;
+  }
+  .navigation{
+      grid-template-columns: repeat(3, 1fr);
+  }
+  .thumb .imgWrapper img{
+    max-height: 663px;
+  }
+  
+}
+@media (min-width: 1024px) {
+  .thumb .imgWrapper img{
+    max-height: 663px;
+  }
+}

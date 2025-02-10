@@ -54,6 +54,7 @@
                 <div class="searchBar">
                     <input type="text" placeholder="Search for products..." class="inputFields search">
                 </div>
+                <button class="navBtn searchMobile"><img src="images\thumb\blackSearch.svg" alt="search"></button>
                 <button class="navBtn"><img src="images\thumb\cart.svg" alt="cart"></button>
                 <button class="navBtn"><img src="images\thumb\user.svg" alt="profile picture"></button>
             </div>
@@ -84,7 +85,7 @@
                     </div>
                 </div>
                 <div class="imgWrapper">
-                    <!-- <img src="images\thumb\thumb.jpg" alt="thumbnail"/> -->
+                    <img src="images\thumb\thumb.png" alt="thumbnail"/>
                 </div>
             </div>
         </section>
@@ -129,7 +130,7 @@
                     </div>
                 </article>                -->
             </div>
-            <button id="TS_viewAllbtn" class="btns btnWhite">View all</button>
+            <button id="newProducts" class="productListBtn btns btnWhite">View all</button>
         </section>
         <!-- Top selling --> 
         <section class="productSection section flexContainer">
@@ -137,7 +138,7 @@
             <div id="topSelling" class="productList">
 
             </div>
-            <button id="NA_viewAllbtn" class="btns btnWhite">View all</button>
+            <button id="topProducts" class="productListBtn btns btnWhite">View all</button>
         </section>
         <!-- Browse by dress style -->
         <section class="bbdStyle section flexContainer">
@@ -189,10 +190,10 @@
     <!-- Footer -->
     <footer class="footer"> 
         <div class="container">
-            <form class="newsletter section blackBackground alignLeft">
+            <form id="newsLetterForm" class="newsletter section blackBackground alignLeft">
                 <h3 class="title wrapBalance ">Stay upto date about our latest offers</h3>
                 <div class="inputsContainer">
-                    <input class="newsInput inputFields emailInput inputWhite" type="email" placeholder="Enter your email adress"/>
+                    <input id="NLEmailInput" class="newsInput inputFields emailInput inputWhite" type="email" placeholder="Enter your email adress" required/>
                     <button class="newsBtn btns btnWhite" type="submit">Subscribe to Newsletter</button>
                 </div>
             </form>
@@ -273,6 +274,7 @@
     <script src="utils.js"></script>
     <script src="products.js"></script>
     <script src="review.js"></script>
+    <script src="newsletter.js"></script>
     <script src="index.js"></script>
 </body>
 </html>

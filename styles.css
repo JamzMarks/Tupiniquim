@@ -27,46 +27,7 @@
 }
 
 /* Mobile First */
-.thumb {
-    background-color: #F2F0F1;
-}
-.thumb .info{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    text-align: left;
-    margin-top: 40px;
-}
-.thumb .info .title{
-    font-size: 34px;
-    text-align: left;
-}
-.thumb .info .paragraph{
-    color: #00000099;
-}
-.numbers .item{
-    border-right: 1px solid #0000001A;
-}
-.numbers .item:last-child{
-    border: none;
-}
-.numbers .item dt{
-    font-weight: 700;
-    font-size: 1.7em;
-}
-.thumb .imgWrapper {
-    width: 100%;
-    max-width: 400px;
-    height: 448px;
-    background: url('images/thumb/thumb.jpg') top/cover no-repeat;
-}
 
-.thumb .imgWrapper img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
-}
 .productSection{
     display: flex;
     justify-content: center;
@@ -104,13 +65,13 @@
     font-size: 24px;
 }
 .casual {
-    background: url('/images/bbdStyle/casual.png');
+    background: url('images/bbdStyle/casual.png');
     background-repeat: no-repeat;
     background-position: right right;
     background-size: cover;
 }
 .formal {
-    background: url('/images/bbdStyle/formal.png');
+    background: url('images/bbdStyle/formal.png');
     background-repeat: no-repeat;
     background-position: 
     10 30,
@@ -118,13 +79,13 @@
     /* background-size: cover; */
 }
 .party {
-    background: url('/images/bbdStyle/party.png');
+    background: url('images/bbdStyle/party.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
 }
 .gym {
-    background: url('/images/bbdStyle/gym.png');
+    background: url('images/bbdStyle/gym.png');
     background-repeat: no-repeat;
     background-position: right center;
     background-size: cover;
@@ -208,6 +169,9 @@
 
 
 @media(min-width: 768px) {
+    .signMsg .close{
+        display: initial;
+    }
     .productSection:first-child{
         padding-bottom: 64px;
     }
