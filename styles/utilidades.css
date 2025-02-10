@@ -1,18 +1,14 @@
-.logo{
-    font-family: "IntegralCF";
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 2.2rem;
-    color: #000;  
-}
 
+.wrapper{
+    width: 100%;  
+    max-width: 1441px; 
+}
 .section .title{
+    text-align: center;
     font-family: "IntegralCF";
     text-transform: uppercase;
     font-weight: 700;
-    text-align: center;
-    text-wrap: true;
-    font-size: 32px;
+    font-size: 32px;    
 }
 
 .wrapBalance{
@@ -21,7 +17,9 @@
 .alignLeft{
     text-align: left;
 }
-
+.marginAuto{
+    margin: 0 auto;
+}
 .bottomDivision{
     border-bottom: 1px solid #0000001A;
 }
@@ -36,12 +34,18 @@
     flex-direction: column;
 }
 
+.gridCenter{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
 .blackBackground{
     background-color: #000;
     color: #FFFFFF;
 }
 
-/* View All btn */
+/*Btns and Input Fields standard */
 .inputFields,
 .btns{
     display: inline-flex;  
@@ -52,21 +56,56 @@
     border-radius: 62px;
     width: calc(100% + 2ch);
     max-width: 100%;
-    height: 40px;
+    height: 46px;
     font-weight: 500;
+    outline: none;
+    /* transition: box-shadow 0.3s ease, transform 0.2s ease; */
 }
+.emailInput{
+    border: none;
+    padding-left: 40px;
+    background: url('/images/footer/newsletter/email.svg') no-repeat 10px center; /* Adicione sua imagem */
+}
+.search{
+    background-color: #000;
+    border: none;
+    padding-left: 40px;
+    background: url('/images/thumb/search.svg') no-repeat 10px center; /* Adicione sua imagem */
+}
+.inputWhite{
+    background-color: #fff;
+    color: #00000066;
+    font-weight: 400;
+}
+
 .btnWhite{
     background-color: #fff;
     color: #000;
     border: 1px solid #0000001a;
+    cursor: pointer;
+}
+.btnWhite:hover{
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #000;
+    color: #fff;
+    transform: translateY(-2px);
 }
 .btnBlack{
     background-color: #000;
     color: #fff;
+    cursor: pointer;
+}
+.btnBlack:hover{
+    box-shadow: 0px 4px 8px rgb(255, 255, 255);
+    background-color: #fff;
+    color: #000;
+    transform: translateY(-2px);
 }
 
 @media (min-width: 768px) {
     .btns {
-        
+        width: calc(100% + 2ch);
+        max-width: 218px;
+        height: 52px;
     }
 }

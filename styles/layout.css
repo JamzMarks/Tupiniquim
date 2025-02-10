@@ -1,144 +1,85 @@
-header > .container,
-body > .container{
-    width: 100%;  
-    max-width: 1441px; 
-    margin: 0 auto; 
-    padding: 0 16px;
-    margin-bottom: 30px;
-    justify-content: center;
-    display: grid;
-    gap: 40px;
-}
 /* header thumb */
-.thumb .container{
-    display: grid;
-    justify-content: center;
-    align-items: center;
+.thumb .container {
+  max-width: 1240px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 .thumb .infoWrapper {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  padding: 0 16px;
 }
-.thumb .numbers dl{
-    display: flex;
-    gap: 55px;
+.thumb .numbers dl {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: stretch;
 }
 /* Working brands */
-.workingBrands{
-    width: 100%;
-    max-height: 146;
-    min-height: 122px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 10px;
-    align-items: center;
-    justify-items: center;
+.workingBrands {
+  width: 100%;
+  max-height: 146;
+  min-height: 122px;
+  max-width: 1240px;
+  display: flex;
+  /* grid-template-columns: repeat(3, 1fr);  */
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.produdctSection{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.productList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 32px 16px;
+}
+/* Our happy customers as reviewSection */
+.reviewsSection > .reviewList {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 10px;
 }
 
-.productList{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-}
-/* Newsletter */
-.newsletter{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.newsletter > .inputsContainer{
-    min-height: 180px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-/* Footer Layout */
-.footerSection{
-    width: 100%;  
-    max-width: 1441px;  
-    margin: 0 auto; 
-    padding: 0 16px;
-    justify-content: center;
-}
-.footerSection > .upperFooter .container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.footerSection > .upperFooter .linksContainer{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 24px;
-    margin-bottom: 20px;
-}
-.footerSection > .bottomFooter{
-    width: 100%;
-    min-height: 132px;
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10px;
-}
 @media (min-width: 768px) {
-    .productList {
-        grid-template-columns: repeat(3, 1fr);
-    }
+  .workingBrands {
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+  }
+  .productList {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .reviewsSection > .reviewList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
 }
-@media(min-width: 1024px) {
-    .mainContainer {
-        padding: 0 32px;
-    }
-    .thumb .container{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        
-    }
-    .workingBrands {
-        grid-template-columns: repeat(5, 1fr);
-        justify-items: center;
-    }
-    .productList{
-        grid-template-columns: repeat(4, 1fr);
-    }
-    .bbdStyle > .container{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        justify-items: center; 
-        gap: 10px;
-    }
-    .newsletter{
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-        
-    }
-    .newsletter > .title{
-        text-wrap: balance;
-    }
-    /* Footer Desktop */
-    .footerSection > .upperFooter{
-        display: grid;
-        grid-template-columns: 30% 1fr;
-        grid-template-rows: 1;
-    }
-    .footerSection > .upperFooter .linksContainer{
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 1fr;
-    }
-    .footerSection > .bottomFooter{
-        flex-direction: row;
-        justify-content: space-between;
-    }
+@media (min-width: 1024px) {
+  .thumb .container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .infoWrapper{
+    gap: 48px;
+  }
+  .productList {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .reviewsSection > .reviewList {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
 }
-
-

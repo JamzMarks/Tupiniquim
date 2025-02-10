@@ -3,6 +3,8 @@ async function initialize() {
     await insertData('topSelling', "data/topProducts.json" );
     await insertReview('reviewList', "data/reviews.json");
     getStarRatings();  
+
+    
 }
 
 initialize();
@@ -44,3 +46,12 @@ function insertStarRating(arr){
         }
     })
 }
+
+document.getElementById("signMsgBtn").addEventListener("click", function() {
+    document.getElementById("signMsg").remove();
+});
+
+document.getElementById("menuButton").addEventListener("click", function(){
+    let checkbox = document.getElementById("menuCheckbox");
+    checkbox.checked = !checkbox.checked;
+})
