@@ -64,13 +64,13 @@ async function insertData(element, data){
 
         const priceElement = document.createElement('p');
         priceElement.classList.add('price');
-        priceElement.textContent = `$${price}`;
+        priceElement.textContent =  `$${parseInt(getDiscountPrice(price, discount))}`;
         priceContainer.appendChild(priceElement);
 
         if(discount != 0){
             const discountElement = document.createElement('p');
             discountElement.classList.add(classes.details.discount);
-            discountElement.textContent = `$${parseInt(getFullPrice(price, discount))}`;
+            discountElement.textContent = `$${price}`;
 
             const percentageElement = document.createElement('div');
             percentageElement.classList.add(classes.details.percentage);

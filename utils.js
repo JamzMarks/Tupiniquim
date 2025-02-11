@@ -4,6 +4,12 @@ function getFullPrice(price, percentage){
     return result;
 }
 
+function getDiscountPrice(price, percentage){
+    const discount = (percentage / 100) * price;
+    const result = price - discount;
+    return result;
+}
+
 async function fetchData(dataUrl){
     try {
         const response = await fetch(dataUrl);
