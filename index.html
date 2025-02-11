@@ -14,12 +14,12 @@
 </head>
 <body>
     <header>
-        <div id="signMsg" class="signMsg blackBackground">
+        <section id="signMsg" class="signMsg blackBackground">
             <div class="wrapper container">
                 <p class="msg">Sign up and get 20% off to your first order. <a class="sign">Sign Up Now</a></p>
                 <button id="signMsgBtn" class="close"><img src="images/thumb/close.svg"/></button>
             </div>
-        </div>
+        </section>
         <nav class="navigation">
             <div class="logo-container">
                 <div class="hamburguerMenu">
@@ -100,44 +100,18 @@
             </div>
         </section> 
     </header>
-    <div class="container">
+    <main class="container">
         
     <!-- new arrivals -->
         <section class="productSection section flexContainer bottomDivision">
-            
             <h2 class="title">New arrivals</h2>
-            <div id="newArrivals" class="productList">
-
-                <!-- <article class="productCard">
-                    <div class="img-container">
-                        <img src="images\newArrivals\shirt1.png" alt="Black T-shirt with Tape Details"/>
-                    </div>
-                    <div class="details">
-                        <h3 class="title">T-Shirt with Tape Details</h3>
-                        <div class="rating">
-                            <div class="starRate">
-                                <p>4.5</p>
-                            </div>
-                            <p>4.5/5</p>
-                        </div>
-                        <div class="priceContainer">
-                            <p class="price">$120</p>
-                            <p class="discount">$123</p>
-                            <div class="percentage">
-                                <p>-20%</p>
-                            </div>
-                        </div>
-                    </div>
-                </article>                -->
-            </div>
+            <div id="newArrivals" class="productList"></div>
             <button id="newProducts" class="productListBtn btns btnWhite">View all</button>
         </section>
         <!-- Top selling --> 
         <section class="productSection section flexContainer">
             <h2 class="title">Top selling</h2>
-            <div id="topSelling" class="productList">
-
-            </div>
+            <div id="topSelling" class="productList"></div>
             <button id="topProducts" class="productListBtn btns btnWhite">View all</button>
         </section>
         <!-- Browse by dress style -->
@@ -171,22 +145,10 @@
                     </button>
                 </div>  
             </div>   
-            <div id="reviewList" class="reviewList container">
-                <!-- <article class="reviewCard">
-                    <div class="starRate">
-                        <p>4.5</p>
-                    </div>
-                    <div class="user">
-                        <p class="userName"><stron>Sarah M.</stron></p>
-                        <img src="images\reviews\check.svg" alt="" >
-                    </div>
-                    <p class="review">"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
-                </article> -->
-            </div>
+            <div id="reviewList" class="reviewList container"></div>
         </section>
-        <!-- Newsletter -->
-        
-    </div>
+    </main>
+
     <!-- Footer -->
     <footer class="footer"> 
         <div class="container">
@@ -197,7 +159,7 @@
                     <button class="newsBtn btns btnWhite" type="submit">Subscribe to Newsletter</button>
                 </div>
             </form>
-            <div class="upperFooter bottomDivision">
+            <section class="upperFooter bottomDivision">
                 <div class="wrapper-logo">
                     <div class="ls_container">
                         <p class="logo">Shop.co</p>
@@ -258,8 +220,8 @@
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div class="bottomFooter">
+            </section>
+            <section class="bottomFooter">
                 <p class="copy">Shop.co © 2000-2023, All Rights Reserved</p>
                 <div class="payments">
                     <img src="images\footer\payments\visa.svg" alt="visa">
@@ -268,9 +230,10 @@
                     <img src="images\footer\payments\applepay.svg" alt="applepay">
                     <img src="images\footer\payments\googlepay.svg" alt="googlepay">
                 </div>
-            </div>
+            </section>
         </div>
     </footer>
+
     <script src="utils.js"></script>
     <script src="products.js"></script>
     <script src="review.js"></script>

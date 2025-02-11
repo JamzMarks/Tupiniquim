@@ -6,6 +6,8 @@
     justify-content: center;
 }
 .signMsg .container{
+    max-width: 1240px;
+    padding: 0 16px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,7 +24,6 @@
     background-color: #000;
     border: none;
     align-self: flex-end;
-    margin-right: 30px;
     display: none;
 }
 
@@ -169,6 +170,9 @@
 
 
 @media(min-width: 768px) {
+    .signMsg{
+        height: 38px;
+    }
     .signMsg .close{
         display: initial;
     }

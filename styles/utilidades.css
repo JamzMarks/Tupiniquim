@@ -83,6 +83,7 @@
     color: #000;
     border: 1px solid #0000001a;
     cursor: pointer;
+    transition: 0.1s ease-in;
 }
 .btnWhite:hover{
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
@@ -94,6 +95,7 @@
     background-color: #000;
     color: #fff;
     cursor: pointer;
+    transition: 0.3s ease-in;
 }
 .btnBlack:hover{
     box-shadow: 0px 4px 8px rgb(255, 255, 255);
