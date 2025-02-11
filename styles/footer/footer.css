@@ -9,9 +9,7 @@
 .newsletter {
   grid-area: newsletter;
   position: relative;
-    /* top: -50%; */
-    transform: translateY(-50%);
-  /* z-index: 1; */
+  transform: translateY(-50%);
   border-radius: 20px;
   margin: 0 auto;
   width: 100%;
@@ -49,7 +47,7 @@
         "newsletter"
         "gapTop"
         "upperFooter"
-        "gap"
+        "gapBottom"
         "bottomFooter";
   grid-template-rows: 150px 32px auto 16px auto;
   grid-template-columns: 1fr;
@@ -65,9 +63,6 @@
     flex-direction: column;
     gap: 14px;
 }
-.upperFooter .linksContainer .link {
-  font-size: 0.75em;
-}
 .upperFooter .linksContainer .link a {
   display: inline;
   transition: color 0.3s ease;
@@ -81,8 +76,6 @@
   flex-direction: column;
   gap: 16px;
 }
-
-
 .upperFooter .linksContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -119,7 +112,7 @@
     grid-template-rows: 1fr;
     align-items: center;
     justify-content: space-evenly;
-    padding: 36px 64px;
+    padding: 36px 30px;
     height: 190%;
   }
   .upperFooter .linksContainer {
@@ -136,6 +129,9 @@
   /* Footer Desktop */
   .newsletter > .title {
     text-wrap: balance;
+  }
+  .newsletter{
+    padding: 36px 64px;
   }
   .upperFooter {
     display: grid;
