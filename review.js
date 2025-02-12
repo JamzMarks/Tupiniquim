@@ -75,12 +75,37 @@ function moveSlide(direction, windowMobile) {
 }
 
 const reviewContainer = document.getElementById("reviewList");
-let containerDimensions = reviewContainer.getBoundingClientRect();
-let containerWidth = containerDimensions.width;
 
-document.getElementById("prev").addEventListener('click', () => {
-    item.scrollLeft += containerWidth;
-})
 document.getElementById("next").addEventListener('click', () => {
-    item.scrollLeft -= containerWidth;
+    const {cardWidth, gapBetweenCards, totalCardWidth} = getReviewValues();
+
+    if (reviewContainer.scrollLeft + reviewContainer.offsetWidth >= reviewContainer.scrollWidth) {
+        reviewContainer.scrollLeft = 0;
+    } else {
+        reviewContainer.scrollLeft += totalCardWidth;
+    }
 })
+document.getElementById("prev").addEventListener('click', () => {
+    const {cardWidth, gapBetweenCards, totalCardWidth} = getReviewValues();
+    
+    if (reviewContainer.scrollLeft === 0) {
+        reviewContainer.scrollLeft = reviewContainer.scrollWidth;
+    } else {
+        reviewContainer.scrollLeft -= totalCardWidth;
+    }
+})
+
+function getReviewValues(){
+    const firstCard = reviewContainer.querySelector('.reviewCard'); 
+    let cardWidth = firstCard.offsetWidth; 
+    let computedStyles = window.getComputedStyle(firstCard);
+    let gapBetweenCards = parseInt(computedStyles.gap);
+
+    let totalCardWidth = cardWidth + (2 * gapBetweenCards)  ;
+
+    return {
+        cardWidth,
+        gapBetweenCards,
+        totalCardWidth
+    }
+}

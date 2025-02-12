@@ -64,11 +64,16 @@
 }
 /* Our happy customers as reviewSection */
 .reviewsSection{
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 .reviewsSection > .reviewList {
   display: flex;
   gap: 10px;
+  scroll-behavior: smooth;
+  overflow-x: auto;
+}
+.reviewsSection > .reviewList::-webkit-scrollbar {
+  display: none;
 }
 
 @media (min-width: 768px) {
