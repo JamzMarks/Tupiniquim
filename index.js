@@ -3,8 +3,8 @@ const dataUrl = {
     topProducts: 'data/topProducts.json'
 }
 
-const newArrivalsPL = document.getElementById('newArrivals')
-const topSellingPL = document.getElementById('topSelling')
+const newArrivalsPL = document.getElementById('newArrivals');
+const topSellingPL = document.getElementById('topSelling');
 
 async function initialize() {
     loadProducts(newArrivalsPL, dataUrl.newProducts);

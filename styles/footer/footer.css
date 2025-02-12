@@ -9,8 +9,7 @@
 .newsletter {
   grid-area: newsletter;
   position: relative;
-    top: -50%; /* Levanta a newsletter 50px acima do footer */
-    z-index: 1; /* Mantém a newsletter acima de outros elementos */
+  transform: translateY(-50%);
   border-radius: 20px;
   margin: 0 auto;
   width: 100%;
@@ -23,6 +22,7 @@
   padding: 24px;
   gap: 32px;
   min-height: 190px;
+  height: 200%;
   max-height: 298px;
 }
 
@@ -45,10 +45,11 @@
   display: grid;
   grid-template-areas:
         "newsletter"
+        "gapTop"
         "upperFooter"
-        "gap"
+        "gapBottom"
         "bottomFooter";
-  grid-template-rows: auto auto 20px auto;
+  grid-template-rows: 150px 32px auto 16px auto;
   grid-template-columns: 1fr;
 }
 .upperFooter {
@@ -56,15 +57,11 @@
   display: grid;
   gap: 25px;
   padding-bottom: 40px;
-  /* margin-top: -95px; */
 }
 .upperFooter .wrapper-logo {
     display: flex;
     flex-direction: column;
     gap: 14px;
-}
-.upperFooter .linksContainer .link {
-  font-size: 0.75em;
 }
 .upperFooter .linksContainer .link a {
   display: inline;
@@ -79,8 +76,6 @@
   flex-direction: column;
   gap: 16px;
 }
-
-
 .upperFooter .linksContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -109,12 +104,16 @@
   .footer{
     margin-top: 95px;
   }
+  .footer > .container{
+    grid-template-rows: 95px 50px auto 20px auto;
+  }
   .newsletter {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     align-items: center;
     justify-content: space-evenly;
-    padding: 36px 64px;
+    padding: 36px 30px;
+    height: 190%;
   }
   .upperFooter .linksContainer {
     grid-template-columns: repeat(4, 1fr);
@@ -130,6 +129,9 @@
   /* Footer Desktop */
   .newsletter > .title {
     text-wrap: balance;
+  }
+  .newsletter{
+    padding: 36px 64px;
   }
   .upperFooter {
     display: grid;

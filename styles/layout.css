@@ -1,4 +1,7 @@
 /* header thumb */
+.thumb {
+  background-color: #f2f0f1;
+}
 .thumb .container {
   max-width: 1240px;
   display: grid;
@@ -14,15 +17,23 @@
   width: 100%;
   padding: 0 16px;
 }
+.thumb .info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+  margin-top: 40px;
+}
 .thumb .numbers dl {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, auto);
   justify-items: stretch;
+  gap: 27.5px;
 }
 /* Working brands */
 .workingBrands {
   width: 100%;
-  max-height: 146;
+  max-height: 146px;
   min-height: 122px;
   max-width: 1240px;
   display: flex;
@@ -72,7 +83,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
   }
-  .infoWrapper{
+  .thumb .infoWrapper{
     gap: 48px;
   }
   .productList {

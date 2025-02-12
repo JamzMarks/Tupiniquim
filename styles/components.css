@@ -32,6 +32,7 @@
 }
 .productCard > .details .priceContainer .discount{
     color: #00000066;
+    text-decoration: line-through;
 }
 .productCard > .details .priceContainer .percentage{
     color: #FF3333;

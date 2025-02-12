@@ -6,6 +6,8 @@
     justify-content: center;
 }
 .signMsg .container{
+    max-width: 1240px;
+    padding: 0 16px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,21 +24,17 @@
     background-color: #000;
     border: none;
     align-self: flex-end;
-    margin-right: 30px;
     display: none;
 }
 
-/* Mobile First */
-
-.productSection{
-    display: flex;
+/* Product Section */
+.container .product{
     justify-content: center;
     align-items: center;
 }
-.productSection:first-child{
+.container .product:first-child{
     padding-bottom: 40px;
 }
-/* Working brands */
 
 /* bbdStyle - Browse by dress style */
 .bbdStyle{
@@ -156,7 +154,6 @@
 .upperFooter .wrapper-logo .socialsList .socialsBack:hover{
     box-shadow: 0 0 3px 1px #0000004d;
 }
-
 .upperFooter .linksContainer .title{
     font-size: 1em;
     letter-spacing: 2px;
@@ -169,10 +166,16 @@
 
 
 @media(min-width: 768px) {
+    .signMsg{
+        height: 38px;
+    }
     .signMsg .close{
         display: initial;
     }
-    .productSection:first-child{
+    .thumb .imgWrapper img {
+        max-height: 663px;
+      }
+    .container .product:first-child{
         padding-bottom: 64px;
     }
     
@@ -192,10 +195,13 @@
     
 }
 @media(min-width: 1024px) {
-    .thumb .info{
+    .thumb .info {
         margin-top: 0;
-    }
-    .thumb .info .title{
+      }
+      .thumb .info .title {
         font-size: 64px;
-    }
+      }
+      .thumb .imgWrapper img {
+        max-height: 663px;
+      }
 }
