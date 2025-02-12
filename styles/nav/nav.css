@@ -128,17 +128,17 @@
 }
 .numbers .item {
   text-align: left;
-  border-right: 1px solid #0000001a;
 }
-.numbers .item:last-child {
-  border: none;
+.numbers .item:first-child {
+  padding-right: 27.5px;
+  border-right: 1px solid #0000001a;
 }
 .numbers .item dt {
   font-weight: 700;
   font-size: 1.7em;
 }
 .numbers .item dd{
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 .thumb .imgWrapper {
   display: flex;
@@ -169,20 +169,29 @@
 }
 .thumb .imgWrapper .blackStar .bigger{
   padding: 0 16px 0 0;
-  width: 76px;
-  height: 76px;
+  width: 104px;
+  height: 104px;
   align-self: flex-start;
 }
 .thumb .imgWrapper .blackStar .smaller{
   padding: 0 0 0 16px;
-  width: 104px;
-  height: 104px;
+  
+  width: 76px;
+  height: 76px;
   align-self: center;
 }
 @media (min-width: 768px) {
+  .numbers .item {
+    border-right: 1px solid #0000001a;
+    padding-right: 27.5px;
+  }
+  .numbers .item:last-child {
+    border: none;
+    padding: 0;
+  }
   .thumb .imgWrapper .blackStar .bigger{
-    width: 76px;
-    height: 76px;
+    width: 104px;
+    height: 104px;
 
   }
   .thumb .imgWrapper .blackStar .smaller{
