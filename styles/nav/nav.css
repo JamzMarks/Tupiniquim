@@ -189,14 +189,7 @@
     border: none;
     padding: 0;
   }
-  .thumb .imgWrapper .blackStar .bigger {
-    width: 104px;
-    height: 104px;
-  }
-  .thumb .imgWrapper .blackStar .smaller {
-    width: 76px;
-    height: 76px;
-  }
+  
 }
 @media (min-width: 1024px) {
   .searchMobile {
@@ -224,5 +217,13 @@
   }
   .thumb .imgWrapper .thumbImg {
     max-height: 663px;
+  }
+  .thumb .imgWrapper .blackStar .bigger {
+    width: 104px;
+    height: 104px;
+  }
+  .thumb .imgWrapper .blackStar .smaller {
+    width: 76px;
+    height: 76px;
   }
 }
