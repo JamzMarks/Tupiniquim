@@ -18,8 +18,6 @@ const classes = {
 }
 
 async function insertData(element, data){
-    // const data = await fetchData(dataUrl);
-    // const element = document.getElementById(elementId);
 
     data.forEach(item => {
         const {title, price, image, discount, rating, percentage} = item;
@@ -83,7 +81,6 @@ async function insertData(element, data){
             priceContainer.appendChild(percentageElement);
         }
         
-    
         // Adicionar ao card
         details.appendChild(titleElement);
         details.appendChild(ratingContainer);

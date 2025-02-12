@@ -99,8 +99,15 @@
   display: inline-flex;
   gap: 16px;
 }
+@media (max-width: 390px) {
+  .newsletter {
+    padding: 24px 20px;
+    height: 210%;
+    gap: 10px;
+  }
+}
 
-@media (min-width: 768px) {
+@media (min-width: 768px) { 
   .footer{
     margin-top: 95px;
   }

@@ -10,8 +10,6 @@ async function initialize() {
     loadProducts(newArrivalsPL, dataUrl.newProducts);
     loadProducts(topSellingPL, dataUrl.topProducts);
     await insertReview('reviewList', "data/reviews.json");
-    // getStarRatings();  
-  
 }
 
 async function loadProducts(element, path){

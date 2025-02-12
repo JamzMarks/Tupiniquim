@@ -4,6 +4,7 @@
 }
 .thumb .container {
   max-width: 1240px;
+  padding: 0 16px;
   display: grid;
   justify-content: center;
   align-items: center;
@@ -15,8 +16,18 @@
   flex-direction: column;
   gap: 20px;
   width: 100%;
-  padding: 0 16px;
+  /* padding: 0 16px; */
 }
+
+.thumb .numbers dl {
+  display: flex;
+  /* justify-items: stretch; */
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 27.5px;
+  row-gap: 12px;
+}
+
 .thumb .info {
   display: flex;
   flex-direction: column;
@@ -24,12 +35,7 @@
   text-align: left;
   margin-top: 40px;
 }
-.thumb .numbers dl {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  justify-items: stretch;
-  gap: 27.5px;
-}
+
 /* Working brands */
 .workingBrands {
   width: 100%;
@@ -49,22 +55,39 @@
   text-align: center;
 }
 .productList {
+  
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  gap: 32px 16px;
+  gap: 32px 20px;
 }
 /* Our happy customers as reviewSection */
-.reviewsSection > .reviewList {
+.reviewsSection{
   overflow: hidden;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+}
+.reviewsSection > .reviewList {
+  display: flex;
   gap: 10px;
+  scroll-behavior: smooth;
+  overflow-x: auto;
+}
+.reviewsSection > .reviewList::-webkit-scrollbar {
+  display: none;
 }
 
 @media (min-width: 768px) {
-  .workingBrands {
+  .thumb .container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .thumb .numbers dl {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-items: stretch;
+    column-gap: 27.5px;
+  }
+  .workingBrands { 
     gap: 10px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -73,16 +96,10 @@
   .productList {
     grid-template-columns: repeat(3, 1fr);
   }
-  .reviewsSection > .reviewList {
-    grid-template-columns: repeat(2, 1fr);
-  }
   
 }
 @media (min-width: 1024px) {
-  .thumb .container {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-  }
+  
   .thumb .infoWrapper{
     gap: 48px;
   }
@@ -91,6 +108,7 @@
   }
   .reviewsSection > .reviewList {
     grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
   }
 
 }
