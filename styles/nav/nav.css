@@ -124,11 +124,11 @@
 }
 .thumb .info .paragraph {
   color: #00000099;
+  text-wrap: initial;
 }
 .numbers .item {
   text-align: left;
   border-right: 1px solid #0000001a;
-  padding-right: 27.5px;
 }
 .numbers .item:last-child {
   border: none;
@@ -143,26 +143,54 @@
 .thumb .imgWrapper {
   display: flex;
   width: 100%;
+  position: relative;
+  align-items: center;
 }
 
-.thumb .imgWrapper img {
+.thumb .imgWrapper .thumbImg {
+  display: block;
   min-height: 448px;
   max-height: 448px;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: top;
-  border-radius: 10px;
+  object-position: 50% 10%;
   align-self: flex-end;
 }
+.thumb .imgWrapper .blackStar{
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60%;
+  /* padding: 0 16px; */
 
+}
+.thumb .imgWrapper .blackStar .bigger{
+  padding: 0 16px 0 0;
+  width: 76px;
+  height: 76px;
+  align-self: flex-start;
+}
+.thumb .imgWrapper .blackStar .smaller{
+  padding: 0 0 0 16px;
+  width: 104px;
+  height: 104px;
+  align-self: center;
+}
 @media (min-width: 768px) {
+  .thumb .imgWrapper .blackStar .bigger{
+    width: 76px;
+    height: 76px;
+
+  }
+  .thumb .imgWrapper .blackStar .smaller{
+    width: 56px;
+    height: 56px;
+  }
 }
 @media (min-width: 1024px) {
-  .numbers .item dt {
-    font-weight: 700;
-    font-size: 2.5em;
-  }
 
   .searchMobile {
     display: none;
@@ -182,5 +210,12 @@
   .displayNoneMobile {
     display: none;
   }
-  
+
+  .numbers .item dt {
+    font-weight: 700;
+    font-size: 2.5em;
+  }
+  .thumb .imgWrapper .thumbImg{
+    max-height: 663px;
+  }
 }

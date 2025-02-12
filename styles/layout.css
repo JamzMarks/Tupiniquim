@@ -80,7 +80,7 @@
 }
 @media (min-width: 1024px) {
   .thumb .container {
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
   }
   .thumb .infoWrapper{
