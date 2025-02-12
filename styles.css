@@ -6,7 +6,7 @@
     justify-content: center;
 }
 .signMsg .container{
-    max-width: 1240px;
+    max-width: 1220px;
     padding: 0 16px;
     display: flex;
     justify-content: center;
@@ -53,6 +53,8 @@
     width: 100%;
     height: 190px;
     border-radius: 30px;
+    background-color: #ffffff;
+    
 }
 .bbdStyle > .grid-bbd .bbdItem > .titleCard{
     font-weight: 700;
@@ -63,29 +65,26 @@
     font-size: 24px;
 }
 .casual {
-    background: url('images/bbdStyle/casual.png');
+    background-image: url('images/bbdStyle/casual.png');
     background-repeat: no-repeat;
-    background-position: right right;
+    background-position: 100% 30%;
     background-size: cover;
 }
 .formal {
-    background: url('images/bbdStyle/formal.png');
+    background-image: url('images/bbdStyle/formal.png');
     background-repeat: no-repeat;
-    background-position: 
-    10 30,
-    center;
-    /* background-size: cover; */
+    background-position: -80% 30%;
 }
 .party {
-    background: url('images/bbdStyle/party.png');
+    background-image: url('images/bbdStyle/party.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
 }
 .gym {
-    background: url('images/bbdStyle/gym.png');
+    background-image: url('images/bbdStyle/gym.png');
     background-repeat: no-repeat;
-    background-position: right center;
+    background-position: 20% 50%;
     background-size: cover;
 }
 
@@ -172,9 +171,7 @@
     .signMsg .close{
         display: initial;
     }
-    .thumb .imgWrapper img {
-        max-height: 663px;
-      }
+    
     .container .product:first-child{
         padding-bottom: 64px;
     }
@@ -200,8 +197,5 @@
       }
       .thumb .info .title {
         font-size: 64px;
-      }
-      .thumb .imgWrapper img {
-        max-height: 663px;
       }
 }

@@ -4,6 +4,7 @@
 }
 .thumb .container {
   max-width: 1240px;
+  padding: 0 16px;
   display: grid;
   justify-content: center;
   align-items: center;
@@ -15,7 +16,7 @@
   flex-direction: column;
   gap: 20px;
   width: 100%;
-  padding: 0 16px;
+  /* padding: 0 16px; */
 }
 
 .thumb .numbers dl {
@@ -54,17 +55,19 @@
   text-align: center;
 }
 .productList {
+  
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  gap: 32px 16px;
+  gap: 32px 20px;
 }
 /* Our happy customers as reviewSection */
+.reviewsSection{
+  /* overflow: hidden; */
+}
 .reviewsSection > .reviewList {
-  overflow: hidden;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+  display: flex;
   gap: 10px;
 }
 
@@ -88,9 +91,6 @@
   .productList {
     grid-template-columns: repeat(3, 1fr);
   }
-  .reviewsSection > .reviewList {
-    grid-template-columns: repeat(2, 1fr);
-  }
   
 }
 @media (min-width: 1024px) {
@@ -103,6 +103,7 @@
   }
   .reviewsSection > .reviewList {
     grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
   }
 
 }

@@ -1,17 +1,15 @@
-const reviewClasses = {
-    card: "reviewCard",
-    rating: "starRate",
-    userContainer: "user",
-    user: "userName",
-    check: {
-        url: "images/reviews/check.svg",
-        alt: 'checkmark'
-    },
-    review: "review"
-}
-
-
 async function insertReview(elementId, dataUrl){
+    const reviewClasses = {
+        card: "reviewCard",
+        rating: "starRate",
+        userContainer: "user",
+        user: "userName",
+        check: {
+            url: "images/reviews/check.svg",
+            alt: 'checkmark'
+        },
+        review: "review"
+    }
     const data = await fetchData(dataUrl);
     const element = document.getElementById(elementId);
 
@@ -54,3 +52,35 @@ async function insertReview(elementId, dataUrl){
         getStarRating(rateElement);
     });
 }
+
+
+function moveSlide(direction, windowMobile) {
+    let currentIndex = 0;
+    const slides = document.querySelectorAll('.reviewCard');
+    console.log(slides)
+    const totalSlides = slides.length;
+  
+    currentIndex += direction;
+  
+    if (currentIndex < 0) {
+      currentIndex = totalSlides - visibleSlides;
+    } else if (currentIndex > totalSlides - visibleSlides) {
+      currentIndex = 0;
+    }
+  
+    const slideWidth = slides[0].offsetWidth;
+    const offset = -(currentIndex * slideWidth);
+    
+    document.querySelector('.reviewList').style.transform = `translateX(${offset}px)`;
+}
+
+const reviewContainer = document.getElementById("reviewList");
+let containerDimensions = reviewContainer.getBoundingClientRect();
+let containerWidth = containerDimensions.width;
+
+document.getElementById("prev").addEventListener('click', () => {
+    item.scrollLeft += containerWidth;
+})
+document.getElementById("next").addEventListener('click', () => {
+    item.scrollLeft -= containerWidth;
+})

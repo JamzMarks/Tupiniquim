@@ -27,7 +27,7 @@
 }
 .productCard > .details .priceContainer .discount,
 .productCard > .details .priceContainer .price{
-    font-size: 1.45rem;
+    font-size: 1.25rem;
     font-weight: 700;
 }
 .productCard > .details .priceContainer .discount{
@@ -39,14 +39,23 @@
     background-color: #FF33331A;
     border-radius: 62px;
     padding: 3px 8px;
+    font-size: 10px;
+    align-self: center;
 }
-.priceContainer .img-container{
-    max-height: 298px;
+.productCard > .img-container{
+    background-color: #F0EEED;
+    border-radius: 20px;
+    max-width: 198px;
+    max-height: 200px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
 }
 .productCard img{
+    object-fit: cover;
     border-radius: 20px;
     max-width: 100%;
-    
+    max-height: 100%;
 }
 
 /* ReviewCard */
@@ -59,6 +68,7 @@
     display: flex;
     gap: 10px;
     flex-direction: column;
+    min-width: 358px;
 
 }
 .reviewsSection > .container .reviewCard .user{
@@ -71,4 +81,21 @@
 .reviewsSection > .container .reviewCard .review{
     font-weight: 400;
     color: #00000099;
+}
+@media (min-width: 768px) {
+    .productCard > .img-container{
+        max-width: 295px;
+        max-height: 298px;
+        margin-bottom: 16px;
+    }
+    .productCard .img-container > img{
+        object-fit: cover;
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+@media (min-width: 1024px) {
+    .reviewsSection > .container .reviewCard{
+        min-width: 400px;
+    }
 }
