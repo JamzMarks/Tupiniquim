@@ -57,7 +57,6 @@ async function insertReview(elementId, dataUrl){
 function moveSlide(direction, windowMobile) {
     let currentIndex = 0;
     const slides = document.querySelectorAll('.reviewCard');
-    console.log(slides)
     const totalSlides = slides.length;
   
     currentIndex += direction;

@@ -83,6 +83,9 @@
     color: #00000099;
 }
 @media (min-width: 768px) {
+    .productCard > .details .rating{
+        font-size: 0.7em;
+    }
     .productCard > .img-container{
         max-width: 295px;
         max-height: 298px;
