@@ -1,4 +1,5 @@
 @import url("fonts.css");
+@import url("fonts-github.css"); 
 
 * {
   box-sizing: border-box;
@@ -19,12 +20,13 @@ body {
 header > .container,
 body > .container {
   width: 100%;
-  max-width: 1240px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0 16px;
   display: grid;
   gap: 40px;
 }
+
 
 ul {
   list-style: none;
@@ -55,6 +57,10 @@ button {
   body {
     gap: 50px;
     font-size: 16px;
+  }
+  header > .container,
+  body > .container {
+    padding: 0 20px;
   }
 }
 

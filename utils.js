@@ -42,6 +42,7 @@ function insertStarRating(obj){
     if (textP) {
         textP.remove();
     }
+    
     for (let i = 0; i < Math.floor(value); i++) {
         const starImg = document.createElement("img");
         starImg.src = "images/reviews/starFull.svg";
@@ -49,6 +50,15 @@ function insertStarRating(obj){
         starImg.classList.add("star-icon");
         element.appendChild(starImg);
     }
+    if(isDecimal(value)){
+        const starImg = document.createElement("img");
+        starImg.src = "images/reviews/starPart.svg";
+        starImg.classList.add("star-icon");
+        starImg.classList.add("starPart-icon");
+        element.appendChild(starImg);
+    }
 }
-
+function isDecimal(num) {
+    return !Number.isInteger(num);
+}
 
