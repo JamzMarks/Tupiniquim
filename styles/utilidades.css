@@ -1,4 +1,3 @@
-
 .wrapper{
     width: 100%;  
     max-width: 1441px; 
@@ -9,7 +8,6 @@
     font-weight: 700;
     font-size: 32px;    
 }
-
 .wrapBalance{
     text-wrap: balance;
 }

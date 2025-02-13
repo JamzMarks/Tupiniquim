@@ -23,7 +23,7 @@
         <nav class="navigation">
             <div class="logo-container">
                 <div class="hamburguerMenu">
-                    <button class="displayNoneMobile" id="menuButton">
+                    <button type="button" class="displayNoneMobile" id="menuButton">
                         <div class="menuToggle">
                             <input type="checkbox" id="menuCheckbox"/>
                             <label for="menuCheckbox" class="menuIcon">
@@ -48,6 +48,8 @@
                 <li class="links"><a>New Arrivals</a></li>
                 <li class="links"><a>Brands</a></li>
             </ul>
+        
+            
             <div class="navBtns">
                 <div class="searchBar">
                     <input type="text" placeholder="Search for products..." class="inputFields search">
@@ -63,7 +65,7 @@
                     <div class="info wrapBalance">
                         <h2 class="title alignLeft">Find clothes that matches your style</h2>
                         <p class="paragraph alignLeft">Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
-                        <button type="button" class="btns btnBlack">Shop Now</button>
+                        <button class="btns btnBlack">Shop Now</button>
                     </div>
                     <div class="numbers">
                         <dl>
@@ -105,17 +107,7 @@
     <main class="container">
         
     <!-- new arrivals -->
-        <section class="product section flexContainer bottomDivision">
-            <h2 class="title">New arrivals</h2>
-            <div id="newArrivals" class="productList"></div>
-            <button type="button" id="newProducts" class="productListBtn btns btnWhite">View all</button>
-        </section>
-        <!-- Top selling --> 
-        <section class="product section flexContainer">
-            <h2 class="title">Top selling</h2>
-            <div id="topSelling" class="productList"></div>
-            <button type="button" id="topProducts" class="productListBtn btns btnWhite">View all</button>
-        </section>
+
         <!-- Browse by dress style -->
         <section class="bbdStyle section flexContainer">
             <h2 class="title wrapBalance alignCenter">Browse by dress style</h2>
@@ -158,8 +150,8 @@
     <!-- Footer -->
     <footer class="footer"> 
         <div class="container">
-            <form id="newsLetterForm" class="newsletter section blackBackground alignLeft">
-                <h3 class="newsletterTitle">Stay upto date about our latest offers</h3>
+            <form id="newsLetterForm" class="newsletter  blackBackground alignLeft">
+                <h3 class=" newsletterTitle">Stay upto date about our latest offers</h3>
                 <div class="inputsContainer">
                     <input id="NLEmailInput" class="newsInput inputFields emailInput inputWhite" type="email" placeholder="Enter your email adress" required/>
                     <button class="newsBtn btns btnWhite" type="submit">Subscribe to Newsletter</button>
@@ -174,16 +166,16 @@
                     <div class="socials">
                         <ul class="socialsList">
                             <li class="socialsBack">
-                                <a href="twitter.com"><img src="images\footer\payments\socials\twitter.svg" alt="twitter"></a>
+                                <img src="images\footer\payments\socials\twitter.svg" alt="twitter">
                             </li>
                             <li class="socialsBack">
-                                <a href="facebook.com"><img src="images\footer\payments\socials\facebook.svg" alt="facebook"></a>
+                                <img src="images\footer\payments\socials\facebook.svg" alt="facebook">
                             </li>
                             <li class="socialsBack">
-                                <a href="instagram.com"><img src="images\footer\payments\socials\instagram.svg" alt="instagram"></a>
+                                <img src="images\footer\payments\socials\instagram.svg" alt="instagram">
                             </li>
                             <li class="socialsBack">
-                                <a href="github.com"><img src="images\footer\payments\socials\github.svg" alt="Github"></a>
+                                <img src="images\footer\payments\socials\github.svg" alt="Github">
                             </li>
                         </ul>
                     </div>
@@ -192,37 +184,37 @@
                     <div class="linkItem">
                         <p class="title">Company</p>
                         <ul class="linkList">
-                            <li class="link"><a href="/about">About</a></li>
-                            <li class="link"><a href="/features">Features</a></li>
-                            <li class="link"><a href="/works">Works</a></li>
-                            <li class="link"><a href="/carrer">Carrer</a></li>
+                            <li class="link"><a>About</a></li>
+                            <li class="link"><a>Features</a></li>
+                            <li class="link"><a>Works</a></li>
+                            <li class="link"><a>Carrer</a></li>
                         </ul>
                     </div>
                     <div class="linkItem">
                         <p class="title">Help</p>
                         <ul class="linkList">
-                            <li class="link"><a href="/support">Customer Support</a></li>
-                            <li class="link"><a href="/delivery">Delivery Details</a></li>
-                            <li class="link"><a href="/terms">Terms & Conditions</a> </li>
-                            <li class="link"><a href="/privacy">Privacy Policy</a></li>
+                            <li class="link"><a>Customer Support</a></li>
+                            <li class="link"><a>Delivery Details</a></li>
+                            <li class="link"><a>Terms & Conditions</a> </li>
+                            <li class="link"><a>Privacy Policy</a></li>
                         </ul>
                     </div>
                     <div class="linkItem">
                         <p class="title">FAQ</p>
                         <ul class="linkList">
-                            <li class="link"><a href="/account">Account</a></li>
-                            <li class="link"><a href="/manage">Manage Deliveries</a></li>
-                            <li class="link"><a href="/orders">Orders</a></li>
-                            <li class="link"><a href="/payments">Payments</a></li>
+                            <li class="link"><a>Account</a></li>
+                            <li class="link"><a>Manage Deliveries</a></li>
+                            <li class="link"><a>Orders</a></li>
+                            <li class="link"><a>Payments</a></li>
                         </ul>
                     </div>
                     <div class="linkItem">
                         <p class="title">Resources</p>
                         <ul class="linkList">
-                            <li class="link"><a href="ebooks/free">Free eBooks</a></li>
-                            <li class="link"><a href="tutorial-development">Development Tutorial</a></li>
-                            <li class="link"><a href="blog/howto">How to - Blog</a></li>
-                            <li class="link"><a href="youtube.com/playlist">Youtube Playlist</a></li>
+                            <li class="link"><a>Free eBooks</a></li>
+                            <li class="link"><a>Development Tutorial</a></li>
+                            <li class="link"><a>How to - Blog</a></li>
+                            <li class="link"><a>Youtube Playlist</a></li>
                         </ul>
                     </div>
                 </div>
