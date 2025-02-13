@@ -53,6 +53,7 @@ function insertStarRating(obj){
     if(isDecimal(value)){
         const starImg = document.createElement("img");
         starImg.src = "images/reviews/starPart.svg";
+        starImg.alt = "Half star";
         starImg.classList.add("star-icon");
         starImg.classList.add("starPart-icon");
         element.appendChild(starImg);
