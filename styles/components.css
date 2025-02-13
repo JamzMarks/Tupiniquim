@@ -1,4 +1,10 @@
 /* Product Card */
+.productCard{
+    min-width: 198px;
+    max-width: 295px;
+    min-height: 283px;
+    max-height: 408px;
+}
 .productCard > .details{
     display: flex;
     flex-direction: column;
@@ -45,7 +51,7 @@
 .productCard > .img-container{
     background-color: #F0EEED;
     border-radius: 20px;
-    max-width: 198px;
+    object-fit: scale-down;
     max-height: 200px;
     display: flex;
     justify-content: center;
