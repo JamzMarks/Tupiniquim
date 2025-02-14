@@ -26,6 +26,7 @@ async function viewMoreProducts(element, btnId) {
     const products = data.slice(qtdProducts,( qtdProducts + 4));
     if(products.length !== 0 ){
         await insertData(element, products);
+        document.getElementById(btnId).remove();
     }
 }
 //Close sign in top message
