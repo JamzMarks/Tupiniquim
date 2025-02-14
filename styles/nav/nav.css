@@ -21,18 +21,20 @@
 .navBtns {
   display: flex;
   align-items: center;
-  justify-content: center;
+  height: 100%;
   gap: 12px;
   transition: 0.2s ease-in;
 }
 .navBtns {
   justify-content: right;
 }
-.navBtns:hover {
-  color: #85888c;
-}
 .logo-container {
   justify-content: left;
+}
+.navBtn img{
+  align-self: center;
+  width: 21px;
+  height: 21px;
 }
 /* Menu toggle */
 .menuIcon {
