@@ -21,18 +21,20 @@
 .navBtns {
   display: flex;
   align-items: center;
-  justify-content: center;
+  height: 100%;
   gap: 12px;
   transition: 0.2s ease-in;
 }
 .navBtns {
   justify-content: right;
 }
-.navBtns:hover {
-  color: #85888c;
-}
 .logo-container {
   justify-content: left;
+}
+.navBtn img{
+  align-self: center;
+  width: 21px;
+  height: 21px;
 }
 /* Menu toggle */
 .menuIcon {
@@ -127,20 +129,7 @@
   color: #00000099;
   text-wrap: initial;
 }
-.numbers .item {
-  text-align: left;
-}
-.numbers .item:first-child {
-  padding-right: 27.5px;
-  border-right: 1px solid #0000001a;
-}
-.numbers .item dt {
-  font-weight: 700;
-  font-size: 1.7em;
-}
-.numbers .item dd {
-  font-size: 0.8rem;
-}
+
 .thumb .imgWrapper {
   display: flex;
   width: 100%;
@@ -200,13 +189,32 @@
 }
 
 .thumb .numbers dl {
-  display: flex;
+  display: flex; 
   flex-wrap: wrap;
   justify-content: center;
   column-gap: 27.5px;
   row-gap: 12px;
+  align-items: center;
 }
-
+.numbers .item {
+  text-align: left;
+}
+.numbers .item:first-child {
+  padding-right: 27.5px;
+  border-right: 1px solid #0000001a;
+}
+.numbers .item:last-child {
+  flex-basis: 100%;
+  text-align: center;
+  align-items: center;
+}
+.numbers .item dt {
+  font-weight: 700;
+  font-size: 1.7em;
+}
+.numbers .item dd {
+  font-size: 0.8rem;
+}
 .thumb .info {
   display: flex;
   flex-direction: column;
@@ -229,6 +237,7 @@
   }
   .thumb .numbers dl {
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-columns: repeat(3, auto);
     justify-content: left;
     column-gap: 27.5px;
@@ -240,6 +249,7 @@
   .numbers .item:last-child {
     border: none;
     padding: 0;
+    grid-column: auto;
   }
   
 }
