@@ -8,7 +8,7 @@ export async function insertReview(elementId, dataUrl){
         userContainer: "user",
         user: "userName",
         check: {
-            url: "images/reviews/check.svg",
+            url: "assets/images/icons/check.svg",
             alt: 'checkmark'
         },
         review: "review"

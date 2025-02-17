@@ -1,3 +1,29 @@
+@import url("src/styles/fonts.css");
+@import url("src/styles/base.css");
+@import url("src/styles/footer/footer.css");
+@import url("src/styles/nav/nav.css");
+@import url("src/styles/layout.css");
+@import url("src/styles/components/product.css");
+@import url("src/styles/components/review.css");
+@import url("src/styles/utilidades.css");
+
+:root {
+  --primary-color: #000;
+  --secondary-color: #fff;
+  --text-color: #000;
+  --bg-color: #fff;
+  --font-size-smaller: 14px;
+  --font-size-larger: 16px; 
+  --max-width: 1280px;
+  --max-content-width: 1240px;
+  --padding-common: 0 16px;
+  --padding-desktop: 0 20px;
+  --font-main: 'Satoshi';
+  --font-secundary: 'IntegralFC';
+  --backgroundCcolor-grey: #f0f0f0;
+  --margin-auto: 0 auto;
+}
+
 /*< bbdStyle - Browse by dress style */
 .bbdStyle {
   background-color: #f0f0f0;

@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop.co</title>
-    <link rel="stylesheet" type="text/css" href="styles\base.css">
+    <!-- <link rel="stylesheet" type="text/css" href="styles\base.css">
     <link rel="stylesheet" type="text/css" href="styles\nav\nav.css">
     <link rel="stylesheet" type="text/css" href="styles\footer\footer.css">
     <link rel="stylesheet" type="text/css" href="styles\layout.css">
     <link rel="stylesheet" type="text/css" href="styles\components.css">
-    <link rel="stylesheet" type="text/css" href="styles\utilidades.css">
+    <link rel="stylesheet" type="text/css" href="styles\utilidades.css"> -->
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-<body>
+<body id="root">
     <header>
         <section id="signMsg" class="signMsg blackBackground">
             <div class="wrapper container">
                 <p class="msg">Sign up and get 20% off to your first order. <a class="sign">Sign Up Now</a></p>
-                <button id="signMsgBtn" class="close"><img src="images/thumb/close.svg"/></button>
+                <button id="signMsgBtn" class="close"><img src="assets\images\icons\menu\close.svg"/></button>
             </div>
         </section>
         <nav class="navigation">
@@ -52,9 +52,9 @@
                 <div class="searchBar">
                     <input type="text" placeholder="Search for products..." class="inputFields search">
                 </div>
-                <button class="navBtn searchMobile"><img src="images\thumb\blackSearch.svg" alt="search"></button>
-                <button class="navBtn"><img src="images\thumb\cart.svg" alt="cart"></button>
-                <button class="navBtn"><img src="images\thumb\user.svg" alt="profile picture"></button>
+                <button class="navBtn searchMobile"><img src="assets\images\icons\search\blackSearch.svg" alt="search"></button>
+                <button class="navBtn"><img src="assets\images\icons\cart.svg" alt="cart"></button>
+                <button class="navBtn"><img src="assets\images\icons\user.svg" alt="profile picture"></button>
             </div>
         </nav>
         <section class="thumb flexContent">
@@ -94,11 +94,11 @@
         <!-- Working brands -->
         <section class="blackBackground">
             <div class="workingBrands marginAuto">
-                <img src="images\workingBrands\versage.svg" alt="versage"/>
-                <img src="images\workingBrands\zara.svg" alt="zara"/>
-                <img src="images\workingBrands\gucci.svg" alt="gucci"/>
-                <img src="images\workingBrands\prada.svg" alt="prada"/>
-                <img src="images\workingBrands\calvinKlein.svg" alt="calvin klein"/>
+                <img src="assets\images\brands\versage.svg" alt="versage"/>
+                <img src="assets\images\brands\zara.svg" alt="zara"/>
+                <img src="assets\images\brands\gucci.svg" alt="gucci"/>
+                <img src="assets\images\brands\prada.svg" alt="prada"/>
+                <img src="assets\images\brands\calvinKlein.svg" alt="calvin klein"/>
             </div>
         </section> 
     </header>
@@ -122,19 +122,19 @@
             <div class="grid-bbd">
                 <div class="bbdItem casual">
                     <p class="titleCard">Casual</p>
-                    <img src="images\bbdStyle\casual.png" alt="casual clothes">
+                    <img src="assets\images\bbdStyle\casual.png" alt="casual clothes">
                 </div>
                 <div class="bbdItem formal">
                     <p class="titleCard">Formal</p>
-                    <img src="images\bbdStyle\formal.png" alt="formal clothes">
+                    <img src="assets\images\bbdStyle\formal.png" alt="formal clothes">
                 </div>
                 <div class="bbdItem party">
                     <p class="titleCard">Party</p>
-                    <img src="images\bbdStyle\party.png" alt="party clothes">
+                    <img src="assets\images\bbdStyle\party.png" alt="party clothes">
                 </div>
                 <div class="bbdItem gym">
                     <p class="titleCard">Gym</p>
-                    <img src="images\bbdStyle\gym.png" alt="gym clothes">
+                    <img src="assets\images\bbdStyle\gym.png" alt="gym clothes">
                 </div>
             </div>
         </section>
@@ -144,10 +144,10 @@
                 <h3 class="title alignLeft">Our happy customers</h3>
                 <div class="arrows">
                     <button id="prev" type="button" class="arrowBtn">
-                        <img src="images\reviews\left-arrow.svg" alt="left arrow"/>
+                        <img src="assets\images\icons\arrows\left-arrow.svg" alt="left arrow"/>
                     </button>
                     <button id="next" type="button" class="arrowBtn">
-                        <img src="images\reviews\right-arrow.svg" alt="right arrow"/>
+                        <img src="assets\images\icons\arrows\right-arrow.svg" alt="right arrow"/>
                     </button>
                 </div>  
             </div>   
@@ -174,16 +174,16 @@
                     <div class="socials">
                         <ul class="socialsList">
                             <li class="socialsBack">
-                                <a href="twitter.com"><img src="images\footer\payments\socials\twitter.svg" alt="twitter"></a>
+                                <a href="twitter.com"><img src="assets\images\icons\socials\twitter.svg" alt="twitter"></a>
                             </li>
                             <li class="socialsBack">
-                                <a href="facebook.com"><img src="images\footer\payments\socials\facebook.svg" alt="facebook"></a>
+                                <a href="facebook.com"><img src="assets\images\icons\socials\facebook.svg" alt="facebook"></a>
                             </li>
                             <li class="socialsBack">
-                                <a href="instagram.com"><img src="images\footer\payments\socials\instagram.svg" alt="instagram"></a>
+                                <a href="instagram.com"><img src="assets\images\icons\socials\instagram.svg" alt="instagram"></a>
                             </li>
                             <li class="socialsBack">
-                                <a href="github.com"><img src="images\footer\payments\socials\github.svg" alt="Github"></a>
+                                <a href="github.com"><img src="assets\images\icons\socials\github.svg" alt="Github"></a>
                             </li>
                         </ul>
                     </div>
@@ -230,21 +230,15 @@
             <section class="bottomFooter">
                 <p class="copy">Shop.co © 2000-2023, All Rights Reserved</p>
                 <div class="payments">
-                    <div class="payWay"><img src="images\footer\payments\visa.svg" alt="visa"></div>
-                    <div class="payWay"><img src="images\footer\payments\mastercard.svg" alt="mastercard"></div>
-                    <div class="payWay"><img src="images\footer\payments\paypal.svg" alt="paypal"></div>
-                    <div class="payWay"><img src="images\footer\payments\applepay.svg" alt="applepay"></div>
-                    <div class="payWay"><img src="images\footer\payments\googlepay.svg" alt="googlepay"></div>      
+                    <div class="payWay"><img src="assets\images\icons\payments\visa.svg" alt="visa"></div>
+                    <div class="payWay"><img src="assets\images\icons\payments\mastercard.svg" alt="mastercard"></div>
+                    <div class="payWay"><img src="assets\images\icons\payments\paypal.svg" alt="paypal"></div>
+                    <div class="payWay"><img src="assets\images\icons\payments\applepay.svg" alt="applepay"></div>
+                    <div class="payWay"><img src="assets\images\icons\payments\googlepay.svg" alt="googlepay"></div>      
                 </div>
             </section>
         </div>
     </footer>
-
-        <!-- <script src="utils.js"></script>
-        <script src="products.js"></script>
-        <script src="review.js"></script>
-        <script src="newsletter.js"></script>
-        <script src="index.js"></script> -->
     <script type="module" src="src/index.js"></script>
 </body>
 </html>

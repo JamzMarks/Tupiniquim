@@ -2,14 +2,14 @@
 .footer {
   width: 100%;
   color: #00000099;
-  background-color: #f0f0f0;
+  background-color: var(--backgroundCcolor-grey);
   margin-top: 146px;
 }
 .footer > .container {
   width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 20px;
+  max-width: var(--max-width);
+  padding: var(--padding-common);
+  margin: var(--margin-auto);
   justify-content: center;
   display: grid;
   grid-template-areas:
@@ -21,13 +21,14 @@
   grid-template-rows: 150px 32px auto 16px auto;
   grid-template-columns: 1fr;
 }
+
 /* Newsletter */
 .newsletter {
   grid-area: newsletter;
   position: relative;
   transform: translateY(-50%);
   border-radius: 20px;
-  margin: 0 auto;
+  margin: var(--margin-auto);
   width: 100%;
   max-width: 1240px;
   display: grid;
