@@ -66,6 +66,7 @@
   gap: 10px;
   scroll-behavior: smooth;
   overflow-x: auto;
+  width: calc(400px * 6);
 }
 .reviewsSection > .reviewList::-webkit-scrollbar {
   display: none;
@@ -111,6 +112,10 @@
   .productList {
     grid-template-columns: repeat(3, 1fr);
   } 
+  .reviewsSection .slidesTitle{
+    max-width: 1220px;
+  }
+  
 }
 @media (min-width: 1024px) {
   .workingBrands img{
