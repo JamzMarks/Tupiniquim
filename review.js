@@ -74,37 +74,45 @@ function moveSlide(direction, windowMobile) {
 }
 
 const reviewContainer = document.getElementById("reviewList");
+const nextBtn = document.getElementById("next");
+const prevBtn = document.getElementById("prev");
 
-document.getElementById("next").addEventListener('click', () => {
-    const {cardWidth, gapBetweenCards, totalCardWidth} = getReviewValues();
+function getReviewValues() {
+    const firstCard = reviewContainer.querySelector('.reviewCard');
+    const secondCard = reviewContainer.children[1];
+    if (!firstCard || !secondCard) return { cardWidth: 0, gapBetweenCards: 0, totalCardWidth: 0 };
 
-    if (reviewContainer.scrollLeft + reviewContainer.offsetWidth >= reviewContainer.scrollWidth) {
-        reviewContainer.scrollLeft = 0;
-    } else {
-        reviewContainer.scrollLeft += totalCardWidth;
-    }
-})
-document.getElementById("prev").addEventListener('click', () => {
-    const {cardWidth, gapBetweenCards, totalCardWidth} = getReviewValues();
-    
-    if (reviewContainer.scrollLeft === 0) {
-        reviewContainer.scrollLeft = reviewContainer.scrollWidth;
-    } else {
-        reviewContainer.scrollLeft -= totalCardWidth;
-    }
-})
-
-function getReviewValues(){
-    const firstCard = reviewContainer.querySelector('.reviewCard'); 
     let cardWidth = firstCard.offsetWidth; 
-    let computedStyles = window.getComputedStyle(firstCard);
-    let gapBetweenCards = parseInt(computedStyles.gap);
+    let gapBetweenCards = secondCard.offsetLeft - (firstCard.offsetLeft + cardWidth);
 
-    let totalCardWidth = cardWidth + (2 * gapBetweenCards)  ;
+    let totalCardWidth = cardWidth + gapBetweenCards;
 
-    return {
-        cardWidth,
-        gapBetweenCards,
-        totalCardWidth
-    }
+    return { cardWidth, gapBetweenCards, totalCardWidth };
 }
+
+nextBtn.addEventListener('click', () => {
+    const { totalCardWidth } = getReviewValues();
+    reviewContainer.scrollLeft += totalCardWidth;
+    console.log(totalCardWidth)
+    setTimeout(() => {
+        if (reviewContainer.scrollLeft + reviewContainer.offsetWidth >= reviewContainer.scrollWidth) {
+            reviewContainer.style.scrollBehavior = "auto"; // Remove animação
+            reviewContainer.scrollLeft = 0; // Retorna para o início
+            reviewContainer.style.scrollBehavior = "smooth"; // Reaplica animação
+        }
+    }, 300);
+});
+
+prevBtn.addEventListener('click', () => {
+    const { totalCardWidth } = getReviewValues();
+    reviewContainer.scrollLeft -= totalCardWidth;
+
+    // Se chegou ao início, volta para o final sem transição
+    setTimeout(() => {
+        if (reviewContainer.scrollLeft <= 0) {
+            reviewContainer.style.scrollBehavior = "auto"; // Remove animação
+            reviewContainer.scrollLeft = reviewContainer.scrollWidth - reviewContainer.offsetWidth; // Vai para o final
+            reviewContainer.style.scrollBehavior = "smooth"; // Reaplica animação
+        }
+    }, 300);
+});

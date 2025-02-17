@@ -234,6 +234,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     padding: 0 20px;
+    gap: 20px;
   }
   .thumb .numbers dl {
     display: grid;
