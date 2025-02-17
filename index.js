@@ -1,6 +1,6 @@
 const dataUrl = {
-    newProducts: 'data/products.json',
-    topProducts: 'data/topProducts.json'
+    newProducts: 'src/data/products.json',
+    topProducts: 'src/data/topProducts.json'
 }
 
 const newArrivalsPL = document.getElementById('newArrivals');
