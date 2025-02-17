@@ -1,4 +1,7 @@
-async function insertReview(elementId, dataUrl){
+import {fetchData} from '../../utils/fetchData.js'
+import { getStarRating } from '../../utils/rating/getStarRating.js';
+
+export async function insertReview(elementId, dataUrl){
     const reviewClasses = {
         card: "reviewCard",
         rating: "starRate",

@@ -1,4 +1,6 @@
-function insertStarRating(obj){
+import { isDecimal } from "../validator/isDecimal-validator.js";
+
+export function insertStarRating(obj){
     const {element, value} = obj
     const textP = element.querySelector("p");
     if (textP) {

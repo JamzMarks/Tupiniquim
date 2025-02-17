@@ -1,4 +1,4 @@
-async function fetchData(dataUrl){
+export async function fetchData(dataUrl){
     try {
         const response = await fetch(dataUrl);
         if (!response.ok) {

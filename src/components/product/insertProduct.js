@@ -1,24 +1,25 @@
-const classes = {
-    productCard: 'productCard',
-    imgContainer: {
-        container: 'img-container'
-    },
-    details: {
-        container: 'details',
-        title: 'title',
-        rating: {
-            wrapper: 'rating',
-            stars: 'starRate'
+import { getStarRating } from "../../utils/rating/getStarRating.js";
+import { getDiscountPrice } from "../../utils/price/getFullPrice.js";
+
+export async function insertData(element, data){
+    const classes = {
+        productCard: 'productCard',
+        imgContainer: {
+            container: 'img-container'
         },
-        priceContainer: 'priceContainer',
-        price: 'price' ,
-        discount: 'discount',
-        percentage: 'percentage'
+        details: {
+            container: 'details',
+            title: 'title',
+            rating: {
+                wrapper: 'rating',
+                stars: 'starRate'
+            },
+            priceContainer: 'priceContainer',
+            price: 'price' ,
+            discount: 'discount',
+            percentage: 'percentage'
+        }
     }
-}
-
-async function insertData(element, data){
-
     data.forEach(item => {
         const {title, price, image, discount, rating, percentage} = item;
 
@@ -56,7 +57,6 @@ async function insertData(element, data){
         ratingContainer.appendChild(starRate);
         ratingContainer.appendChild(ratingText);
         
-
         const priceContainer = document.createElement('div');
         priceContainer.classList.add('priceContainer');
 
@@ -91,8 +91,7 @@ async function insertData(element, data){
 
         element.appendChild(productCard);
         getStarRating(starRate);
-    });
-    
+    }); 
 }
 
 

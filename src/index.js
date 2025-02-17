@@ -1,0 +1,48 @@
+import {loadProducts, viewMoreProducts} from './utils/loadProduct.js'
+import { handleNewsletterSubmit } from './components/newsLetter/newsletterForm.js';
+import { insertReview } from './components/review/insertReview.js';
+
+const dataUrl = {
+    newProducts: 'src/data/products.json',
+    topProducts: 'src/data/topProducts.json'
+}
+
+const newArrivalsPL = document.getElementById('newArrivals');
+const topSellingPL = document.getElementById('topSelling');
+
+async function initialize() {
+    loadProducts(newArrivalsPL, dataUrl.newProducts);
+    loadProducts(topSellingPL, dataUrl.topProducts);
+    await insertReview('reviewList', "src/data/reviews.json");
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    
+    //Close sign in top message
+    const signMsgBtn = document.getElementById("signMsgBtn");
+    if (signMsgBtn) {
+        signMsgBtn.addEventListener("click", function() {
+            document.getElementById("signMsg").remove();
+        });
+    }
+
+    //Menu hamburguer button
+    document.getElementById("menuButton").addEventListener("click", function(){
+        let checkbox = document.getElementById("menuCheckbox");
+        checkbox.checked = !checkbox.checked;
+    })
+
+    //View more button
+    document.querySelectorAll(".productListBtn").forEach(button => {
+        button.addEventListener("click", function(event){
+            const element = this.parentElement.querySelector(".productList");
+            const btnId = event.target.id;
+            viewMoreProducts(element, btnId, dataUrl);
+        })
+    })
+
+    //newsletterForm
+    document.getElementById("newsLetterForm").addEventListener('submit', handleNewsletterSubmit);
+});
+
+initialize();
