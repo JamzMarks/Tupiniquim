@@ -1,0 +1,36 @@
+.reviewsSection > .container .reviewCard{
+    background-color: #fff;
+    border: 1px solid #0000001A ;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    flex: 0 0 100%;
+
+}
+.reviewsSection > .container .reviewCard .user{
+    display: flex;
+    gap: 10px;
+}
+.reviewsSection > .container .reviewCard .userName{
+    font-weight: 700;
+}
+.reviewsSection > .container .reviewCard .review{
+    font-weight: 400;
+    color: #00000099;
+}
+@media (min-width: 768px) {
+
+    .reviewsSection > .reviewList .reviewCard {
+        flex: 0 0 calc(50% - 5px);
+    }
+}
+
+@media (min-width: 1024px) {
+    .reviewsSection > .container .reviewCard{
+        min-width: 400px;
+        flex: 0 0 calc(33.33% - 15px);
+    }
+}
