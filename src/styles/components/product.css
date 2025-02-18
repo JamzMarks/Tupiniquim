@@ -11,6 +11,9 @@
     text-transform: capitalize;
     text-align: left;
 }
+.productCard > .details .title a:hover{
+    color: #666666;
+}
 .productCard > .details .rating{
     display: flex;
     align-items: center;

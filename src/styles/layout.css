@@ -3,12 +3,12 @@
 .workingBrands {
   width: 100%;
   min-height: 146px;
-  max-width: 1240px;
+  max-width: var(--max-content-width);
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .workingBrands img{
   min-height: 21px ;
@@ -49,6 +49,10 @@
   background-color: #ffffff;
   overflow: hidden;
   border-radius: 20px;
+  transition: 0.3s ease-in-out;
+}
+.bbdStyle > .grid-bbd .bbdItem:hover{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 .bbdStyle > .grid-bbd .bbdItem > .titleCard {
   font-weight: 700;
@@ -58,17 +62,42 @@
   z-index: 2;
   font-size: 24px;
 }
-.bbdStyle > .grid-bbd .bbdItem img{
+.bbdItem img{
   position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: right center;
-}
- .bbdStyle > .grid-bbd > .casual img{
-  transform: scaleX(-1);
+  margin-left: 10%;
 }
 
+/* BBD Styles image section */
+.bbdStyle > .grid-bbd > .casual img{
+  transform: scaleX(-1) scale(1.2);
+  object-position: center left !important;;
+}
+.bbdStyle > .grid-bbd > .formal img{
+  object-position: center 30% !important; 
+  transform: scale(1.2);
+  margin-left: 30%;
+}
+.bbdStyle > .grid-bbd > .party img{
+  object-position: center center !important;;
+}
+.bbdStyle > .grid-bbd > .gym img{
+  object-position: right 35% !important;;
+}
+@media (min-width: 520px) {
+  .bbdStyle > .grid-bbd {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 16px;
+  }
+  .bbdStyle > .grid-bbd > .gym img{
+    object-position: right 40% !important;;
+  }
+}
 @media (min-width: 768px) { 
   .container .product:first-child {
     padding-bottom: 64px;
@@ -83,6 +112,7 @@
   .productList {
     grid-template-columns: repeat(3, 1fr);
   } 
+  
   .bbdStyle > .grid-bbd {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -92,11 +122,7 @@
   .bbdStyle > .grid-bbd .bbdItem {
     width: 100%;
     height: 289px;
-  }
-  .bbdStyle > .grid-bbd .bbdItem > .titleCard {
-    top: 25px;
-    left: 36px;
-    font-size: 32px;
+    cursor: pointer;
   }
   .formal,
   .party {
@@ -113,5 +139,9 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 32px 20px;
   }
-  
+  .bbdStyle > .grid-bbd .bbdItem > .titleCard {
+    top: 25px;
+    left: 36px;
+    font-size: 32px;
+  }
 }

@@ -50,21 +50,21 @@ button {
   font-weight: 700;
   text-transform: uppercase;
   font-size: 25px;
-  color: #000;
+  color: var(--text-color);
 }
 
 
 @media (min-width: 768px) {
   body {
     gap: 50px;
-    font-size: 16px;
+    font-size: var(--font-size-larger);
   }
   header > .container,
   body main > .container {
-    padding: 0 20px;
+    padding: var(--padding-desktop);
   }
   .logo {
-    font-size: 32px;
+    font-size: calc(2 * var(--font-size-larger));
   }
 }
 

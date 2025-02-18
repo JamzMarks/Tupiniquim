@@ -39,7 +39,10 @@ export async function insertData(element, data){
 
         const titleElement = document.createElement('h3');
         titleElement.classList.add(classes.details.title);
-        titleElement.textContent = title;
+        const anchorElement = document.createElement('a');
+        anchorElement.textContent = title;
+        titleElement.appendChild(anchorElement);
+
 
         const ratingContainer = document.createElement('div');
         ratingContainer.classList.add(classes.details.rating.wrapper);
