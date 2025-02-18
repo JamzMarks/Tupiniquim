@@ -1,12 +1,12 @@
-@import url("src/styles/fonts.css");
-@import url("src/styles/base.css");
-@import url("src/styles/footer/footer.css");
-@import url("src/styles/nav/nav.css");
-@import url("src/styles/layout.css");
-@import url("src/styles/components/product.css");
-@import url("src/styles/components/review.css");
-@import url("src/styles/utilidades.css");
-@import url("src/styles/components/signMsg.css");
+@import url("./src/styles/fonts.css");
+@import url("./src/styles/base.css");
+@import url("./src/styles/footer/footer.css");
+@import url("./src/styles/nav/nav.css");
+@import url("./src/styles/layout.css");
+@import url("./src/styles/components/product.css");
+@import url("./src/styles/components/review.css");
+@import url("./src/styles/utilidades.css");
+@import url("./src/styles/components/signMsg.css");
 
 :root {
   --primary-color: #000;

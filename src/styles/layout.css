@@ -102,6 +102,7 @@
   .party {
     grid-column: span 2;
   }
+  
 }
 
 @media (min-width: 1024px) {
