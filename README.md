@@ -6,4 +6,7 @@ GitHub pages: [Clique aqui para acessar](https://jamzmarks.github.io/CompassUOL-
 
 
 ![image](https://github.com/user-attachments/assets/4d0ded80-2492-4485-8149-8501d5910d70)
-![image](https://github.com/user-attachments/assets/048ad929-547a-4837-806e-b5ca1474c9f8)
+
+A simple project by Compass UOL for training HTML, CSS and JS vanilla. Focus on mobile first and responsivity.
+For complete de challenge:
+-- git clone https://github.com/JamzMarks/CompassUOL-Desafio2.git
