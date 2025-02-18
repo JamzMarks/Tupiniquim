@@ -1,13 +1,13 @@
 console.log("O script foi carregado corretamente!");
 
-import {loadProducts, viewMoreProducts} from 'src/utils/loadProduct.js'
-import { handleNewsletterSubmit } from 'src/components/newsLetter/newsletterForm.js';
-import { insertReview } from 'src/components/review/insertReview.js';
-import { moveSlider } from 'src/components/review/slides.js';
+import {loadProducts, viewMoreProducts} from './src/utils/loadProduct.js'
+import { handleNewsletterSubmit } from './src/components/newsLetter/newsletterForm.js';
+import { insertReview } from './src/components/review/insertReview.js';
+import { moveSlider } from './src/components/review/slides.js';
 
 const dataUrl = {
-    newProducts: 'src/data/products.json',
-    topProducts: 'src/data/topProducts.json'
+    newProducts: './src/data/products.json',
+    topProducts: './src/data/topProducts.json'
 }
 
 const newArrivalsPL = document.getElementById('newArrivals');
@@ -16,7 +16,7 @@ const topSellingPL = document.getElementById('topSelling');
 async function initialize() {
     loadProducts(newArrivalsPL, dataUrl.newProducts);
     loadProducts(topSellingPL, dataUrl.topProducts);
-    await insertReview('reviewList', "src/data/reviews.json");
+    await insertReview('reviewList', "./src/data/reviews.json");
 }
 
 document.addEventListener("DOMContentLoaded", () => {

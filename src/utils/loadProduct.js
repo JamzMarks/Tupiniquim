@@ -1,5 +1,5 @@
-import { fetchData } from "src/utils/fetchData.js";
-import { insertData } from "src/components/product/insertProduct.js";
+import { fetchData } from "./fetchData.js";
+import { insertData } from "../components/product/insertProduct.js";
 
 export async function loadProducts(element, path){
     const data = await fetchData(path);

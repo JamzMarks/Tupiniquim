@@ -1,5 +1,5 @@
-import {fetchData} from 'src/utils/fetchData.js'
-import { getStarRating } from 'src/utils/rating/getStarRating.js';
+import {fetchData} from '../../utils/fetchData.js'
+import { getStarRating } from '../../utils/rating/getStarRating.js';
 
 export async function insertReview(elementId, dataUrl){
     const reviewClasses = {

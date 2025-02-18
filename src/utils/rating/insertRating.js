@@ -1,4 +1,4 @@
-import { isDecimal } from "src/utils/validator/isDecimal-validator.js";
+import { isDecimal } from "../validator/isDecimal-validator.js";
 
 export function insertStarRating(obj){
     const {element, value} = obj
