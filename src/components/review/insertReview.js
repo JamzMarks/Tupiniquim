@@ -17,10 +17,11 @@ export async function insertReview(elementId, dataUrl){
     const element = document.getElementById(elementId);
 
     data.forEach(item => {
-        const {user, review, rating} = item
+        const {id, user, review, rating} = item
 
         const reviewCard = document.createElement('article');
         reviewCard.classList.add(reviewClasses.card);
+        reviewCard.setAttribute('id', `review-${id}`);
 
         const rateElement = document.createElement('div');
         rateElement.classList.add(reviewClasses.rating)
@@ -56,66 +57,3 @@ export async function insertReview(elementId, dataUrl){
     });
 }
 
-
-function moveSlide(direction, windowMobile) {
-    let currentIndex = 0;
-    const slides = document.querySelectorAll('.reviewCard');
-    const totalSlides = slides.length;
-  
-    currentIndex += direction;
-  
-    if (currentIndex < 0) {
-      currentIndex = totalSlides - visibleSlides;
-    } else if (currentIndex > totalSlides - visibleSlides) {
-      currentIndex = 0;
-    }
-  
-    const slideWidth = slides[0].offsetWidth;
-    const offset = -(currentIndex * slideWidth);
-    
-    document.querySelector('.reviewList').style.transform = `translateX(${offset}px)`;
-}
-
-const reviewContainer = document.getElementById("reviewList");
-const nextBtn = document.getElementById("next");
-const prevBtn = document.getElementById("prev");
-
-function getReviewValues() {
-    const firstCard = reviewContainer.querySelector('.reviewCard');
-    const secondCard = reviewContainer.children[1];
-    if (!firstCard || !secondCard) return { cardWidth: 0, gapBetweenCards: 0, totalCardWidth: 0 };
-
-    let cardWidth = firstCard.offsetWidth; 
-    let gapBetweenCards = secondCard.offsetLeft - (firstCard.offsetLeft + cardWidth);
-
-    let totalCardWidth = cardWidth + gapBetweenCards;
-
-    return { cardWidth, gapBetweenCards, totalCardWidth };
-}
-
-nextBtn.addEventListener('click', () => {
-    const { totalCardWidth } = getReviewValues();
-    reviewContainer.scrollLeft += totalCardWidth;
-    console.log(totalCardWidth)
-    setTimeout(() => {
-        if (reviewContainer.scrollLeft + reviewContainer.offsetWidth >= reviewContainer.scrollWidth) {
-            reviewContainer.style.scrollBehavior = "auto"; // Remove animação
-            reviewContainer.scrollLeft = 0; // Retorna para o início
-            reviewContainer.style.scrollBehavior = "smooth"; // Reaplica animação
-        }
-    }, 300);
-});
-
-prevBtn.addEventListener('click', () => {
-    const { totalCardWidth } = getReviewValues();
-    reviewContainer.scrollLeft -= totalCardWidth;
-
-    // Se chegou ao início, volta para o final sem transição
-    setTimeout(() => {
-        if (reviewContainer.scrollLeft <= 0) {
-            reviewContainer.style.scrollBehavior = "auto"; // Remove animação
-            reviewContainer.scrollLeft = reviewContainer.scrollWidth - reviewContainer.offsetWidth; // Vai para o final
-            reviewContainer.style.scrollBehavior = "smooth"; // Reaplica animação
-        }
-    }, 300);
-});

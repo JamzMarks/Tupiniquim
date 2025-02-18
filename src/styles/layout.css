@@ -1,31 +1,4 @@
-/*< Sign up message */
-.signMsg {
-  height: 34px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.signMsg .container {
-  max-width: 1220px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.signMsg .msg {
-  flex-grow: 1;
-  text-align: center;
-}
-.signMsg .sign {
-  cursor: pointer;
-  text-decoration: underline;
-}
-.signMsg .close {
-  background-color: #000;
-  border: none;
-  align-self: flex-end;
-  display: none;
-}
-/* Sign up message >*/
+
 /* Working brands */
 .workingBrands {
   width: 100%;
@@ -57,49 +30,8 @@
   gap: 26px 16px;
 }
 /* Product Section >*/
-/*< Reviews */
-.reviewsSection{
-  overflow: hidden;
-}
-.reviewsSection > .reviewList {
-  display: flex;
-  gap: 10px;
-  scroll-behavior: smooth;
-  overflow-x: auto;
-  width: calc(400px * 6);
-}
-.reviewsSection > .reviewList::-webkit-scrollbar {
-  display: none;
-}
-.slidesTitle {
-  display: flex;
-  justify-content: space-between;
-}
-.arrows {
-  display: flex;
-  gap: 16px;
-}
-.arrows .arrowBtn {
-  background: none;
-  border: none;
-  color: #000;
-  cursor: pointer;
-}
-.arrows .arrowBtn:hover {
-  box-shadow: 0px 4px 8px rgb(255, 255, 255);
-  transform: translateY(-2px);
-}
-/* Reviews >*/
+
 @media (min-width: 768px) { 
-  .signMsg {
-    height: 38px;
-  }
-  .signMsg .container{
-    padding: 0 16px;
-  }
-  .signMsg .close {
-    display: initial;
-  }
   .container .product:first-child {
     padding-bottom: 64px;
   }
@@ -112,11 +44,8 @@
   .productList {
     grid-template-columns: repeat(3, 1fr);
   } 
-  .reviewsSection .slidesTitle{
-    max-width: 1220px;
-  }
-  
 }
+
 @media (min-width: 1024px) {
   .workingBrands img{
     min-height: 32px ;
@@ -125,8 +54,5 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 32px 20px;
   }
-  .reviewsSection > .reviewList {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  }
+  
 }

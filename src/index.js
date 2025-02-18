@@ -1,6 +1,7 @@
 import {loadProducts, viewMoreProducts} from './utils/loadProduct.js'
 import { handleNewsletterSubmit } from './components/newsLetter/newsletterForm.js';
 import { insertReview } from './components/review/insertReview.js';
+import { moveSlider } from './components/review/slides.js';
 
 const dataUrl = {
     newProducts: 'src/data/products.json',
@@ -40,6 +41,12 @@ document.addEventListener("DOMContentLoaded", () => {
             viewMoreProducts(element, btnId, dataUrl);
         })
     })
+
+    //slider btns
+    const prevBtn = document.getElementById("prev");
+    const nextBtn = document.getElementById("next");
+    prevBtn.addEventListener("click", () => moveSlider("prev"));
+    nextBtn.addEventListener("click", () => moveSlider("next"));
 
     //newsletterForm
     document.getElementById("newsLetterForm").addEventListener('submit', handleNewsletterSubmit);

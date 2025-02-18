@@ -1,0 +1,38 @@
+.signMsg {
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signMsg .container {
+  max-width: 1220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signMsg .msg {
+  flex-grow: 1;
+  text-align: center;
+}
+.signMsg .sign {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.signMsg .close {
+  background-color: #000;
+  border: none;
+  align-self: flex-end;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .signMsg {
+    height: 38px;
+  }
+  .signMsg .container {
+    padding: 0 16px;
+  }
+  .signMsg .close {
+    display: initial;
+  }
+}

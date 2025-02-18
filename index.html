@@ -4,12 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop.co</title>
-    <!-- <link rel="stylesheet" type="text/css" href="styles\base.css">
-    <link rel="stylesheet" type="text/css" href="styles\nav\nav.css">
-    <link rel="stylesheet" type="text/css" href="styles\footer\footer.css">
-    <link rel="stylesheet" type="text/css" href="styles\layout.css">
-    <link rel="stylesheet" type="text/css" href="styles\components.css">
-    <link rel="stylesheet" type="text/css" href="styles\utilidades.css"> -->
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body id="root">
@@ -43,7 +37,7 @@
                 <h1 class="logo">Shop.co</h1>
             </div>
             <ul class="navLinks">
-                <li class="links"><a>Shop <span><img src="images\thumb\bottomArrow.svg" alt="bottomArrow"></span> </a></li>
+                <li class="links"><a>Shop <span><img src="assets\images\icons\arrows\bottomArrow.svg" alt="bottomArrow"></span> </a></li>
                 <li class="links"><a>On Sale</a></li>
                 <li class="links"><a>New Arrivals</a></li>
                 <li class="links"><a>Brands</a></li>
@@ -84,10 +78,10 @@
                 </div>
                 <div class="imgWrapper">
                     <div class="blackStar">
-                        <img class="smaller" src="images\thumb\blackStar.svg" alt="smaller star">
-                        <img class="bigger" src="images\thumb\blackStar.svg" alt="smaller star">
+                        <img class="smaller" src="assets\images\icons\stars\blackStar.svg" alt="smaller star">
+                        <img class="bigger" src="assets\images\icons\stars\blackStar.svg" alt="smaller star">
                     </div>
-                    <img class="thumbImg" src="images\thumb\thumb.png" alt="thumbnail"/>
+                    <img class="thumbImg" src="assets\images\thumb\thumb.png" alt="thumbnail"/>
                 </div>
             </div>
         </section>
@@ -102,42 +96,45 @@
             </div>
         </section> 
     </header>
-    <main class="container">
-        
-    <!-- new arrivals -->
-        <section class="product section flexContainer bottomDivision">
-            <h2 class="title">New arrivals</h2>
-            <div id="newArrivals" class="productList"></div>
-            <button type="button" id="newProducts" class="productListBtn btns btnWhite">View all</button>
-        </section>
-        <!-- Top selling --> 
-        <section class="product section flexContainer">
-            <h2 class="title">Top selling</h2>
-            <div id="topSelling" class="productList"></div>
-            <button type="button" id="topProducts" class="productListBtn btns btnWhite">View all</button>
-        </section>
-        <!-- Browse by dress style -->
-        <section class="bbdStyle section flexContainer">
-            <h2 class="title wrapBalance alignCenter">Browse by dress style</h2>
-            <div class="grid-bbd">
-                <div class="bbdItem casual">
-                    <p class="titleCard">Casual</p>
-                    <img src="assets\images\bbdStyle\casual.png" alt="casual clothes">
+
+    <main>
+        <div class="container">
+            
+            <!-- new arrivals -->
+            <section class="product section flexContainer bottomDivision">
+                <h2 class="title">New arrivals</h2>
+                <div id="newArrivals" class="productList"></div>
+                <button type="button" id="newProducts" class="productListBtn btns btnWhite">View all</button>
+            </section>
+            <!-- Top selling --> 
+            <section class="product section flexContainer">
+                <h2 class="title">Top selling</h2>
+                <div id="topSelling" class="productList"></div>
+                <button type="button" id="topProducts" class="productListBtn btns btnWhite">View all</button>
+            </section>
+            <!-- Browse by dress style -->
+            <section class="bbdStyle section flexContainer">
+                <h2 class="title wrapBalance alignCenter">Browse by dress style</h2>
+                <div class="grid-bbd">
+                    <div class="bbdItem casual">
+                        <p class="titleCard">Casual</p>
+                        <img src="assets\images\bbdStyle\casual.png" alt="casual clothes">
+                    </div>
+                    <div class="bbdItem formal">
+                        <p class="titleCard">Formal</p>
+                        <img src="assets\images\bbdStyle\formal.png" alt="formal clothes">
+                    </div>
+                    <div class="bbdItem party">
+                        <p class="titleCard">Party</p>
+                        <img src="assets\images\bbdStyle\party.png" alt="party clothes">
+                    </div>
+                    <div class="bbdItem gym">
+                        <p class="titleCard">Gym</p>
+                        <img src="assets\images\bbdStyle\gym.png" alt="gym clothes">
+                    </div>
                 </div>
-                <div class="bbdItem formal">
-                    <p class="titleCard">Formal</p>
-                    <img src="assets\images\bbdStyle\formal.png" alt="formal clothes">
-                </div>
-                <div class="bbdItem party">
-                    <p class="titleCard">Party</p>
-                    <img src="assets\images\bbdStyle\party.png" alt="party clothes">
-                </div>
-                <div class="bbdItem gym">
-                    <p class="titleCard">Gym</p>
-                    <img src="assets\images\bbdStyle\gym.png" alt="gym clothes">
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
         <!-- Our happy customers -->
         <section class="reviewsSection section flexContainer">
             <div class="slidesTitle">
@@ -151,11 +148,12 @@
                     </button>
                 </div>  
             </div>   
-            <div id="reviewList" class="reviewList container"></div>
+            <div class="reviewList container">
+                <div id="reviewList" class="slides"></div>
+            </div>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="footer"> 
         <div class="container">
             <form id="newsLetterForm" class="newsletter section blackBackground alignLeft">
