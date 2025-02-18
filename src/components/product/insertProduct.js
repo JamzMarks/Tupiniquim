@@ -1,5 +1,5 @@
-import { getStarRating } from "../../utils/rating/getStarRating.js";
-import { getDiscountPrice } from "../../utils/price/getFullPrice.js";
+import { getStarRating } from "src/utils/rating/getStarRating.js";
+import { getDiscountPrice } from "src/utils/price/getFullPrice.js";
 
 export async function insertData(element, data){
     const classes = {

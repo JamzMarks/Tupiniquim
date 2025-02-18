@@ -1,4 +1,4 @@
-import { insertStarRating } from "./insertRating.js";
+import { insertStarRating } from "src/utils/rating/insertRating.js";
 
 export function getStarRating(element) {
     const firstP = element.querySelector("p");
