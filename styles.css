@@ -1,3 +1,31 @@
+@import url("src/styles/fonts.css");
+@import url("src/styles/base.css");
+@import url("src/styles/footer/footer.css");
+@import url("src/styles/nav/nav.css");
+@import url("src/styles/layout.css");
+@import url("src/styles/components/product.css");
+@import url("src/styles/components/review.css");
+@import url("src/styles/utilidades.css");
+@import url("src/styles/components/signMsg.css");
+
+:root {
+  --primary-color: #000;
+  --secondary-color: #fff;
+  --text-color: #000;
+  --bg-color: #fff;
+  --font-size-smaller: 14px;
+  --font-size-larger: 16px; 
+  --min-width: 320px;
+  --max-width: 1280px;
+  --max-content-width: 1240px;
+  --padding-common: 0 16px;
+  --padding-desktop: 0 20px;
+  --font-main: 'Satoshi';
+  --font-secundary: 'IntegralFC';
+  --backgroundCcolor-grey: #f0f0f0;
+  --margin-auto: 0 auto;
+}
+
 /*< bbdStyle - Browse by dress style */
 .bbdStyle {
   background-color: #f0f0f0;
@@ -17,6 +45,7 @@
   border-radius: 30px;
   background-color: #ffffff;
   overflow: hidden;
+  border-radius: 20px;
 }
 .bbdStyle > .grid-bbd .bbdItem > .titleCard {
   font-weight: 700;
@@ -27,26 +56,31 @@
   font-size: 24px;
 }
 .bbdStyle > .grid-bbd .bbdItem img{
+  position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 20px;
+  object-position: right center;
+  /* transform: translate(-50%, -50%) scale(0.8); 
+  width: auto;
+  height: auto; */
 }
-.bbdStyle > .grid-bbd > .casual img{
+ .bbdStyle > .grid-bbd > .casual img{
   transform: scaleX(-1);
-  object-position: 50% 40%;
-  
 }
+/* 
 .bbdStyle > .grid-bbd > .formal img{
-  object-position: 80% 40%;
+  transform: scaleX(-1);
+  object-position: right center;
   transform: translateX(25%);
-}
+} */
+/*
 .bbdStyle > .grid-bbd > .party img{
   object-position: 70% 50%;
 }
 .bbdStyle > .grid-bbd > .gym img{
   object-position: 30% 40%;
-}
+} */
 /* bbdStyle - Browse by dress style >*/
 
 @media (min-width: 768px) {  

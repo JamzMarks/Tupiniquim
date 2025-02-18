@@ -1,0 +1,58 @@
+
+/* Working brands */
+.workingBrands {
+  width: 100%;
+  min-height: 146px;
+  max-width: 1240px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.workingBrands img{
+  min-height: 21px ;
+}
+/*< Product Section */
+.product {
+  justify-content: center;
+  align-items: center;
+}
+.product:first-child {
+  padding-bottom: 40px;
+}
+.productList {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 26px 16px;
+}
+/* Product Section >*/
+
+@media (min-width: 768px) { 
+  .container .product:first-child {
+    padding-bottom: 64px;
+  }
+  .workingBrands { 
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    min-height: 122px;
+  }
+  .productList {
+    grid-template-columns: repeat(3, 1fr);
+  } 
+}
+
+@media (min-width: 1024px) {
+  .workingBrands img{
+    min-height: 32px ;
+  }
+  .productList {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px 20px;
+  }
+  
+}
