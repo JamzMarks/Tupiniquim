@@ -1,7 +1,7 @@
 console.log("O script foi carregado corretamente!");
 
 import {loadProducts, viewMoreProducts} from './src/utils/loadProduct.js'
-import { handleNewsletterSubmit } from './src/components/newsLetter/newsletterForm.js';
+import { handleNewsletterSubmit } from './src/components/newsletter/newsletterForm.js';
 import { insertReview } from './src/components/review/insertReview.js';
 import { moveSlider } from './src/components/review/slides.js';
 

@@ -29,23 +29,5 @@
 
 
 @media (min-width: 768px) {  
-  .bbdStyle > .grid-bbd {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-    gap: 16px;
-  }
-  .bbdStyle > .grid-bbd .bbdItem {
-    width: 100%;
-    height: 289px;
-  }
-  .bbdStyle > .grid-bbd .bbdItem > .titleCard {
-    top: 25px;
-    left: 36px;
-    font-size: 32px;
-  }
-  .formal,
-  .party {
-    grid-column: span 2;
-  }
+
 }
