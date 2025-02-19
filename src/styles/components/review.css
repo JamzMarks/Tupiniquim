@@ -29,6 +29,7 @@
   padding: var(--padding-common);
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .slidesTitle {
   width: 100%;

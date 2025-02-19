@@ -70,8 +70,6 @@
   object-position: right center;
   margin-left: 10%;
 }
-
-/* BBD Styles image section */
 .bbdStyle > .grid-bbd > .casual img{
   transform: scaleX(-1) scale(1.2);
   object-position: center left !important;;
