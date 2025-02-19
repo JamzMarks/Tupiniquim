@@ -11,13 +11,13 @@
         <section id="signMsg" class="signMsg blackBackground">
             <div class="wrapper container">
                 <p class="msg">Sign up and get 20% off to your first order. <a class="sign">Sign Up Now</a></p>
-                <button id="signMsgBtn" class="close"><img src="assets\images\icons\menu\close.svg"/></button>
+                <button id="signMsgBtn" type="button" class="close"><img src="assets\images\icons\menu\close.svg"/></button>
             </div>
         </section>
         <nav class="navigation">
             <div class="logo-container">
                 <div class="hamburguerMenu">
-                    <button class="displayNoneMobile" id="menuButton">
+                    <button type="button" class="displayNoneMobile" id="menuButton">
                         <div class="menuToggle">
                             <input type="checkbox" id="menuCheckbox"/>
                             <label for="menuCheckbox" class="menuIcon">
@@ -26,10 +26,10 @@
                                 <span></span>
                             </label>
                             <ul class="menuMobile">
-                              <li class="links"><a>Shop</a></li>
-                              <li class="links"><a>On Sale </a></li>
-                              <li class="links"><a>New Arrivals</a></li>
-                              <li class="links"><a>Brands</a></li>
+                              <li class="links"><a href="/shop">Shop</a></li>
+                              <li class="links"><a href="/onsale">On Sale </a></li>
+                              <li class="links"><a href="/news">New Arrivals</a></li>
+                              <li class="links"><a href="/brands">Brands</a></li>
                             </ul>
                           </div>
                     </button>
@@ -101,13 +101,13 @@
         <div class="container">
             
             <!-- new arrivals -->
-            <section class="product section flexContainer bottomDivision">
+            <section class="product section  bottomDivision">
                 <h2 class="title">New arrivals</h2>
                 <div id="newArrivals" class="productList"></div>
                 <button type="button" id="newProducts" class="productListBtn btns btnWhite">View all</button>
             </section>
             <!-- Top selling --> 
-            <section class="product section flexContainer">
+            <section class="product section">
                 <h2 class="title">Top selling</h2>
                 <div id="topSelling" class="productList"></div>
                 <button type="button" id="topProducts" class="productListBtn btns btnWhite">View all</button>

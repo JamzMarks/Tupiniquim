@@ -1,5 +1,5 @@
-export function getDiscountPrice(price, percentage){
-    const discount = (percentage / 100) * price;
-    const result = price - discount;
+export function getFullPrice(price, percentage){
+    const perc = 100 - percentage;
+    const result = (price * 100) / perc;
     return result;
 }

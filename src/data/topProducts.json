@@ -15,7 +15,7 @@
         "title": "COURAGE GRAPHIC T-SHIRT",
         "price": 145,
         "image": "assets/images/products/shirt4.png",
-        "discount": 0,
+        "discount": 10,
         "rating": {
           "rate": 4,
           "total": 5
@@ -70,7 +70,7 @@
         "title": "LOOSE FIT BERMUDA SHORTS 2",
         "price": 80,
         "image": "assets/images/products/jeans2.png",
-        "discount": 0,
+        "discount": 5,
         "rating": {
           "rate": 3,
           "total": 5
@@ -81,7 +81,7 @@
         "title": "FADED SKINNY JEANS 2",
         "price": 311,
         "image": "assets/images/products/jeans3.png",
-        "discount": 0,
+        "discount": 45,
         "rating": {
           "rate": 4.5,
           "total": 5

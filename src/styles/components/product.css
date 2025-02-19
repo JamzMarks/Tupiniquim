@@ -53,10 +53,10 @@
     justify-content: center;
     margin-bottom: 10px;
 }
-.productCard img{
+.productCard > .img-container img{
     object-fit: cover;
     border-radius: 20px;
-    max-width: 198px;
+    min-width: 198px;
     max-height: 200px;
 }
 @media (min-width: 768px) {

@@ -3,7 +3,6 @@ let isAnimating = false;
 
 export function moveSlider2(direction) {
     const cardWidth = (slider.firstElementChild).offsetWidth + 20;
-    console.log(cardWidth)
     if (isAnimating) return;
     isAnimating = true;
     if (direction === "next") {
@@ -49,30 +48,30 @@ export function moveSlider(direction) {
 
         setTimeout(() => {
             const firstCard = slider.querySelector(".reviewCard:first-child");
-            firstCard.style.opacity = "0"; // Aplica um fade-out
+            firstCard.style.opacity = "0"; 
 
             setTimeout(() => {
-                slider.appendChild(firstCard); // Move o primeiro para o final
+                slider.appendChild(firstCard); 
                 slider.style.transition = "none";
                 slider.style.transform = "translateX(0)";
-                firstCard.style.opacity = "1"; // Retorna o fade-in
+                firstCard.style.opacity = "1"; 
                 
                 setTimeout(() => {
                     isAnimating = false;
                 }, 100);
-            }, 300); // Tempo para o fade-out
-        }, 500); // Tempo da transição
+            }, 300); 
+        }, 500); 
     } 
 
     else if (direction === "prev") {
         const lastCard = slider.querySelector(".reviewCard:last-child");
-        lastCard.style.opacity = "0"; // Fade-out
+        lastCard.style.opacity = "0"; 
 
         setTimeout(() => {
             slider.prepend(lastCard);
             slider.style.transition = "none";
             slider.style.transform = `translateX(-${cardWidth}px)`;
-            lastCard.style.opacity = "1"; // Fade-in
+            lastCard.style.opacity = "1";
 
             setTimeout(() => {
                 slider.style.transition = "transform 0.5s ease-in-out";
