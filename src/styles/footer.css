@@ -1,0 +1,106 @@
+.footer {
+  width: 100%;
+  color: #ffffffd7;
+  background-image: url("../../assets/images/fundo-footer-teste-programador.png.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-position: top top;
+}
+.footer > .container {
+  width: 100%;
+  max-width: var(--max-width);
+  padding: var(--padding-mobile);
+  margin: var(--margin-auto);
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-size: var(--font-size-mobile);
+}
+.upperFooter {
+  margin-top: 15%;
+  display: grid;
+  gap: 25px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #ffffff99;
+}
+.footer-nav-wrapper{
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+}
+.footer-infos > *:not(:first-child){
+margin-top: 20px;
+}.footer-infos img{
+  filter: grayscale(1) invert(1);
+
+}
+.footer-nav{
+  display: flex;
+  flex-direction: column;
+  gap:30px;
+}
+.footer-nav h4{
+  font-size: 1.5em;
+}
+.footer-links{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.bottomFooter {
+  width: 100%;
+  min-height: 132px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+.socials-wrapper {
+  display: inline-flex;
+  gap: 16px;
+}
+
+.socials-wrapper{
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+ .socials-wrapper i{
+  height: 70%;
+  width: 70%;
+  align-self: center;
+}
+
+@media (min-width: 768px) {
+  .upperFooter {
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1;
+  }
+  .bottomFooter {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer > .container {
+    font-size: var(--font-size-desktop);
+    padding: var(--padding-desktop);
+
+  }
+  .footer-nav-wrapper{
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+  }
+  .footer {
+    margin-top: 95px;
+  }
+  .linksContainer {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+  }
+}

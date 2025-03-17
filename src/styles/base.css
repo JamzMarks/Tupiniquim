@@ -2,72 +2,48 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Satoshi", "IntegralFC", sans-serif;
+  font-family: "Satoshi", sans-serif;
 }
 
-body {
-  font-size: 14px;
+body, #root {
+  font-size: var(--font-size-mobile);
   display: grid;
-  gap: 30px;
   overflow-x: hidden;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
 }
-
-header > .container,
-body main > .container {
+header, main{
+  display: grid;
+  gap: 70px; 
+}
+.navigation,  
+.container {
   width: 100%;
-  max-width: 1280px;
+  gap: 80px;
+  max-width: var(--max-width);
   margin: var(--margin-auto);
-  padding: 0 16px;
-  display: grid;
-  gap: 40px;
+  padding: var(--padding-mobile);
 }
 
-main{
-  display: grid;
-  gap: 40px;
-}
-
-ul {
-  list-style: none;
-}
-
+ul {list-style: none;}
 a {
   cursor: pointer;
   text-decoration: none;
   color: inherit;
 }
-
 button {
   background: none;
   cursor: pointer;
   border: none;
 }
 
-.logo {
-  font-family: "IntegralCF";
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 25px;
-  color: var(--text-color);
-}
-
 
 @media (min-width: 768px) {
   body {
     gap: 50px;
-    font-size: var(--font-size-larger);
+    font-size: var(--font-size-desktop);
   }
-  header > .container,
-  body main > .container {
+  .container {
     padding: var(--padding-desktop);
   }
-  .logo {
-    font-size: calc(2 * var(--font-size-larger));
-  }
-}
-
-@media (min-width: 1024px) {
-
 }

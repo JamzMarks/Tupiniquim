@@ -1,0 +1,32 @@
+.download{
+    position: relative;
+}
+
+.download img{
+    height: auto;
+    width: 100%;
+    display: block;
+}
+
+.download-content{
+    position: absolute;
+  top: 40%;
+  left: 50%; 
+  color: var(--primary-color); 
+  padding: 20px;
+  z-index: 10;
+  text-wrap: balance;
+  font-size: 1.2rem;
+  display: flex;
+    flex-direction: column;
+    gap: 30px;
+}   
+
+.download-wrapper{
+    display: flex;
+    gap: 30px;
+}
+.download-wrapper img{
+    height: auto;
+    width:150px;
+}

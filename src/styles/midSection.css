@@ -1,0 +1,52 @@
+.mid{
+}
+
+.mid-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    font-size: var(--font-size-mobile);
+
+}
+.mid-section img{   
+    max-width: 40%;
+    height: auto;
+    /* max-height: 500px; */
+    /* right: 0; */
+}
+.mid-section .car{
+    left: 0;
+}
+.mid-section .people{
+    right:0;
+}
+.mid-content{
+    display: flex;
+    padding: var(--padding-mobile);
+    justify-content: center ;
+}
+.text-content{
+    display: grid;
+    gap: 10px;
+    text-wrap: balance;
+    width: 50%;
+
+}
+.text-content p{
+    color: #00000099;
+}
+.text-content a{
+    color: rgb(0, 110, 255);
+}
+
+@media (min-width: 768px) {
+    .mid-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        font-size: var(--font-size-desktop);
+    
+    }
+}

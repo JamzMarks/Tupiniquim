@@ -5,15 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop.co</title>
     <link rel="stylesheet" type="text/css" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body id="root">
     <header>
-        <section id="signMsg" class="signMsg blackBackground">
-            <div class="wrapper container">
-                <p class="msg">Sign up and get 20% off to your first order. <a class="sign">Sign Up Now</a></p>
-                <button id="signMsgBtn" type="button" class="close"><img src="assets\images\icons\menu\close.svg"/></button>
-            </div>
-        </section>
         <nav class="navigation">
             <div class="logo-container">
                 <div class="hamburguerMenu">
@@ -25,214 +20,180 @@
                                 <span></span>
                                 <span></span>
                             </label>
-                            <ul class="menuMobile">
-                              <li class="links"><a href="/shop">Shop</a></li>
-                              <li class="links"><a href="/onsale">On Sale </a></li>
-                              <li class="links"><a href="/news">New Arrivals</a></li>
-                              <li class="links"><a href="/brands">Brands</a></li>
-                            </ul>
                           </div>
                     </button>
                 </div>
-                <h1 class="logo">Shop.co</h1>
+                <img src="assets\images\logo-teste-programador.png" alt="logo">
             </div>
             <ul class="navLinks">
-                <li class="links"><a>Shop <span><img src="assets\images\icons\arrows\bottomArrow.svg" alt="bottomArrow"></span> </a></li>
-                <li class="links"><a>On Sale</a></li>
-                <li class="links"><a>New Arrivals</a></li>
-                <li class="links"><a>Brands</a></li>
+                <li class="links"><a>Drivers</a></li>
+                <li class="links"><a>Passengers</a></li>
+                <li class="links"><a>About Us</a></li>
+                <li class="links"><a>Contact</a></li>
             </ul>
             <div class="navBtns">
-                <div class="searchBar">
-                    <input type="text" placeholder="Search for products..." class="inputFields search">
-                </div>
-                <button type="button" class="navBtn searchMobile"><img src="assets\images\icons\search\blackSearch.svg" alt="search"></button>
-                <button type="button" class="navBtn"><img src="assets\images\icons\cart.svg" alt="cart"></button>
-                <button type="button" class="navBtn"><img src="assets\images\icons\user.svg" alt="profile picture"></button>
+                <button type="button" class="navBtn login"><img src="assets\images\icone-login-teste-programador.png" alt="cart">Login</button>
+                <button type="button" class="navBtn signup">Sign Up</button>
             </div>
-        </nav>
-        <section class="thumb flexContent">
-            <div class="container section">
+        </nav> 
+    </header>
+    <main>
+        <section class="thumb">
+            <div class="thumb-wrapper">
                 <div class="infoWrapper">
-                    <div class="info wrapBalance">
-                        <h2 class="title alignLeft">Find clothes that matches your style</h2>
-                        <p class="paragraph alignLeft">Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
-                        <button type="button" class="btns btnBlack">Shop Now</button>
-                    </div>
-                    <div class="numbers">
-                        <dl>
-                            <div class="item">
-                                <dt>200+</dt>
-                                <dd>International Brands</dd>
-                            </div>
-                            <div class="item">
-                                <dt>2,000+</dt>
-                                <dd>High-Quality Products</dd>
-                            </div>
-                            <div class="item">
-                                <dt>30,000+</dt>
-                                <dd>Happy Customers</dd>
-                            </div>
-                        </dl>
+                    <div class="info">
+                        <h2 class="title">Start your workday comfortably</h2>
+                        <div class="content">
+                            <p>Get in, sit back and experience the comfort of car that takes you directly to yout destination.</p>
+                            <p>Arriving work as a sardine with public transport or sweating is a thing of the past.</p>
+                        </div>
+                        <button type="button" class="discoverBtn">Discover</button>
                     </div>
                 </div>
                 <div class="imgWrapper">
-                    <div class="blackStar">
-                        <img class="smaller" src="assets\images\icons\stars\blackStar.svg" alt="smaller star">
-                        <img class="bigger" src="assets\images\icons\stars\blackStar.svg" alt="smaller star">
+                    <img class="thumbImg" src="assets\images\img-banner-teste-programador.png" alt="thumbnail"/>
+                </div>  
+            </div>
+        </section>
+        <section class="container solutions">
+            <div class="solutionsTitle">
+                <img src="assets\images\linha-reta-teste-programador.png.jpg" alt="line bar">
+                <h2>How to get started?</h2>
+            </div>
+            <div class="solutions-wrapper">
+                <article class="solutions-item">
+                    <img src="assets\images\solucao-1-teste-programador.png" alt="">
+                    <h3>Create your <br/>account</h3>
+                    <p>Complete your account with some basic information including your home your work location and your working yours.</p>
+                </article>
+                <article class="solutions-item">
+                    <img src="assets\images\solucao-2-teste-programador.png" alt="">
+                    <h3>Plan your <br/>journeys</h3>
+                    <p>Open the app,
+                        click the agenda tab and enter your working hours for the coming week. Then you’ll be presented with a list of our drivers.</p>
+                </article>
+                <article class="solutions-item">
+                    <img src="assets\images\solucao-3-teste-programador.png" alt="">
+                    <h3>Meet your <br/>drivers</h3>
+                    <p>Use our chat to get to know your match with our driver. You’ll be picked up at your regular location, or agree on an alternative pick-up location.</p>
+                </article>
+                <article class="solutions-item">
+                    <img src="assets\images\solucao-4-teste-programador.png" alt="">
+                    <h3>Enjoy your <br/>journey</h3>
+                    <p>Get in, sit back and enjoy your journey that takes you directly to your destination with some free cup of coffee from us.</p>
+                </article>
+            </div>
+        </section>
+        <section class="mid">
+            <article class="mid-section">
+                <img class="car" src="assets\images\img-fundo-teste-programador.png" alt="Illustration of a car">
+                <div class="mid-content">
+                    <div class="text-content">
+                        <p>DriveOn is a mobile carpool platform that effortlessly brings commuters together in one car. Traveling home and work will never be the same again.
+                            Our mission is to stop traffic jams and CO2 pollution as a result of inefficient car commuting.
+                        </p>
+                        <a href="#">Learn more »</a>
                     </div>
-                    <img class="thumbImg" src="assets\images\thumb\thumb.png" alt="thumbnail"/>
+                </div>
+            </article>
+            <article class="mid-section">
+                <div class="mid-content">
+                    <div class="text-content">
+                        <h2><span class="highlight"></span> Our commitment <br> to your safety</h2>
+                        <p>With every safety feature we add
+                            and every standard in the Community Guide that we uphold,
+                            we are committed to protecting you throughout the journey.
+                            Learn more about our Community Guide <span>here</span>.</p>
+                        <a href="#">See all safety features »</a>
+                    </div>
+                </div>
+                <img class="people" src="assets\images\img-fundo-2-teste-programador.png" alt="People carpooling">
+            </article>
+        </section>
+        
+
+        
+
+        <section class="download">
+            <img src="assets\images\img-fundo-4-teste-programador.png" alt="">
+            <div class="download-content">
+                <h2>Download the DriveOn application to get more benefits and experience</h2>
+                <div class="download-wrapper">
+                    <div class="download-item">
+                        <img src="assets\images\Google_Play_Store_badge_EN.svg.webp" alt="">
+                    </div>
+                    <div class="download-item">
+                        <img src="assets\images\Download_on_the_App_Store_Badge.svg.png" alt="">
+                    </div>
                 </div>
             </div>
         </section>
-        <!-- Working brands -->
-        <section class="blackBackground">
-            <div class="workingBrands marginAuto">
-                <img src="assets\images\brands\versage.svg" alt="versage"/>
-                <img src="assets\images\brands\zara.svg" alt="zara"/>
-                <img src="assets\images\brands\gucci.svg" alt="gucci"/>
-                <img src="assets\images\brands\prada.svg" alt="prada"/>
-                <img src="assets\images\brands\calvinKlein.svg" alt="calvin klein"/>
-            </div>
-        </section> 
-    </header>
-
-    <main>
-        <div class="container">
-            
-            <!-- new arrivals -->
-            <section class="product section  bottomDivision">
-                <h2 class="title">New arrivals</h2>
-                <div id="newArrivals" class="productList"></div>
-                <button type="button" id="newProducts" class="productListBtn btns btnWhite">View all</button>
-            </section>
-            <!-- Top selling --> 
-            <section class="product section">
-                <h2 class="title">Top selling</h2>
-                <div id="topSelling" class="productList"></div>
-                <button type="button" id="topProducts" class="productListBtn btns btnWhite">View all</button>
-            </section>
-            <!-- Browse by dress style -->
-            <section class="bbdStyle section flexContainer">
-                <h2 class="title wrapBalance alignCenter">Browse by dress style</h2>
-                <div class="grid-bbd">
-                    <div class="bbdItem casual">
-                        <p class="titleCard">Casual</p>
-                        <img src="assets\images\bbdStyle\casual.png" alt="casual clothes">
+        <section class="startRegister container">
+            <div class="startRegister-wrapper">
+                <div class="startRegister-item">
+                    <div class="startRegister-content">
+                        <p>Register to be a drivers partner</p>
+                        <img src="assets\images\setas-teste-programador.png" alt="arrow">
                     </div>
-                    <div class="bbdItem formal">
-                        <p class="titleCard">Formal</p>
-                        <img src="assets\images\bbdStyle\formal.png" alt="formal clothes">
-                    </div>
-                    <div class="bbdItem party">
-                        <p class="titleCard">Party</p>
-                        <img src="assets\images\bbdStyle\party.png" alt="party clothes">
-                    </div>
-                    <div class="bbdItem gym">
-                        <p class="titleCard">Gym</p>
-                        <img src="assets\images\bbdStyle\gym.png" alt="gym clothes">
-                    </div>
+                    <img src="assets\images\linha-reta-teste-programador.png.jpg" alt="line bar">
                 </div>
-            </section>
-        </div>
-        <!-- Our happy customers -->
-        <section class="reviewsSection section flexContainer">
-            <div class="slidesTitle">
-                <h3 class="title alignLeft">Our happy customers</h3>
-                <div class="arrows">
-                    <button id="prev" type="button" class="arrowBtn">
-                        <img src="assets\images\icons\arrows\left-arrow.svg" alt="left arrow"/>
-                    </button>
-                    <button id="next" type="button" class="arrowBtn">
-                        <img src="assets\images\icons\arrows\right-arrow.svg" alt="right arrow"/>
-                    </button>
-                </div>  
-            </div>   
-            <div class="reviewList container">
-                <div id="reviewList" class="slides"></div>
+                <div class="startRegister-item">
+                    <div class="startRegister-content">
+                        <p>Register to start your jorney</p>
+                        <img src="assets\images\setas-teste-programador.png" alt="arrow">
+                    </div>
+                    <img src="assets\images\linha-reta-teste-programador.png.jpg" alt="line bar">
+                </div>
             </div>
         </section>
     </main>
 
     <footer class="footer"> 
         <div class="container">
-            <form id="newsLetterForm" class="newsletter section blackBackground alignLeft">
-                <h3 class="newsletterTitle">Stay upto date about our latest offers</h3>
-                <div class="inputsContainer">
-                    <input id="NLEmailInput" class="newsInput inputFields emailInput inputWhite" type="email" placeholder="Enter your email adress" required/>
-                    <button class="newsBtn btns btnWhite2" type="submit">Subscribe to Newsletter</button>
+            <section class="upperFooter">
+                <div class="footer-infos">
+                    <img src="assets\images\logo-teste-programador.png" alt="logo">
+                    <p class="slogan"><i class="fa-solid fa-question"></i> Resolution Center</p>
+                    <p><i class="fa-solid fa-comment"></i> English</p>
                 </div>
-            </form>
-            <section class="upperFooter bottomDivision">
-                <div class="wrapper-logo">
-                    <div class="ls_container">
-                        <p class="logo">Shop.co</p>
-                        <p class="slogan">We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
-                    </div>
-                    <div class="socials">
-                        <ul class="socialsList">
-                            <li class="socialsBack">
-                                <a href="twitter.com"><img src="assets\images\icons\socials\twitter.svg" alt="twitter"></a>
-                            </li>
-                            <li class="socialsBack">
-                                <a href="facebook.com"><img src="assets\images\icons\socials\facebook.svg" alt="facebook"></a>
-                            </li>
-                            <li class="socialsBack">
-                                <a href="instagram.com"><img src="assets\images\icons\socials\instagram.svg" alt="instagram"></a>
-                            </li>
-                            <li class="socialsBack">
-                                <a href="github.com"><img src="assets\images\icons\socials\github.svg" alt="Github"></a>
-                            </li>
+
+                <div class="footer-nav-wrapper">
+                    <div class="footer-nav">
+                        <h4>About Us</h4>
+                        <ul class="footer-links">
+                            <li class="link"><a href="#">Newsroom</a></li>
+                            <li class="link"><a href="#">Investors relations</a></li>
+                            <li class="link"><a href="#">Global citizenship</a></li>
+                            <li class="link"><a href="#">Safety</a></li>
+                            <li class="link"><a href="#">Blog</a></li>
+                            <li class="link"><a href="#">Career</a></li>
                         </ul>
                     </div>
-                </div>
-                <div class="linksContainer">
-                    <div class="linkItem">
-                        <p class="title">Company</p>
-                        <ul class="linkList">
-                            <li class="link"><a href="/about">About</a></li>
-                            <li class="link"><a href="/features">Features</a></li>
-                            <li class="link"><a href="/works">Works</a></li>
-                            <li class="link"><a href="/carrer">Carrer</a></li>
-                        </ul>
-                    </div>
-                    <div class="linkItem">
-                        <p class="title">Help</p>
-                        <ul class="linkList">
-                            <li class="link"><a href="/support">Customer Support</a></li>
-                            <li class="link"><a href="/delivery">Delivery Details</a></li>
-                            <li class="link"><a href="/terms">Terms & Conditions</a> </li>
-                            <li class="link"><a href="/privacy">Privacy Policy</a></li>
-                        </ul>
-                    </div>
-                    <div class="linkItem">
-                        <p class="title">FAQ</p>
-                        <ul class="linkList">
-                            <li class="link"><a href="/account">Account</a></li>
-                            <li class="link"><a href="/manage">Manage Deliveries</a></li>
-                            <li class="link"><a href="/orders">Orders</a></li>
-                            <li class="link"><a href="/payments">Payments</a></li>
-                        </ul>
-                    </div>
-                    <div class="linkItem">
-                        <p class="title">Resources</p>
-                        <ul class="linkList">
-                            <li class="link"><a href="ebooks/free">Free eBooks</a></li>
-                            <li class="link"><a href="tutorial-development">Development Tutorial</a></li>
-                            <li class="link"><a href="blog/howto">How to - Blog</a></li>
-                            <li class="link"><a href="youtube.com/playlist">Youtube Playlist</a></li>
+                    <div class="footer-nav">
+                        <h4>Our Product</h4>
+                        <ul class="footer-links">
+                            <li class="link"><a href="#">Take a trip</a></li>
+                            <li class="link"><a href="#">Drive it</a></li>
+                            <li class="link"><a href="#">Eats</a></li>
+                            <li class="link"><a href="#">DriveOn for business</a></li>
+                            <li class="link"><a href="#">DriveOn Freight</a></li>
+                            <li class="link"><a href="#">Health</a></li>
+                            <li class="link"><a href="#">DriveOn Air</a></li>
+                            <li class="link"><a href="#">Advanced Technologies Group</a></li>
                         </ul>
                     </div>
                 </div>
+            
             </section>
+
             <section class="bottomFooter">
-                <p class="copy">Shop.co © 2000-2023, All Rights Reserved</p>
-                <div class="payments">
-                    <div class="payWay"><img src="assets\images\icons\payments\visa.svg" alt="visa"></div>
-                    <div class="payWay"><img src="assets\images\icons\payments\mastercard.svg" alt="mastercard"></div>
-                    <div class="payWay"><img src="assets\images\icons\payments\paypal.svg" alt="paypal"></div>
-                    <div class="payWay"><img src="assets\images\icons\payments\applepay.svg" alt="applepay"></div>
-                    <div class="payWay"><img src="assets\images\icons\payments\googlepay.svg" alt="googlepay"></div>      
+                <p class="copy">© 2019 DriveOn Technologies Inc.</p>
+                <div class="socials-wrapper">
+                    <div class="social"><i class="fa-brands fa-facebook-f"></i></div>
+                    <div class="social"><i class="fa-brands fa-twitter"></i></div>
+                    <div class="social"><i class="fa-brands fa-youtube"></i></div>
+                    <div class="social"><i class="fa-brands fa-instagram"></i></div>      
+                    <div class="social"><i class="fa-brands fa-linkedin-in"></i></div>      
                 </div>
             </section>
         </div>
