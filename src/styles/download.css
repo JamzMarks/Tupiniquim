@@ -1,32 +1,86 @@
-.download{
-    position: relative;
+.download {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  justify-content: center;
+  gap: 20px;
 }
-
-.download img{
-    height: auto;
-    width: 100%;
-    display: block;
+.download-background img {
+  width:100%;
+  height: auto;
 }
-
-.download-content{
-    position: absolute;
-  top: 40%;
-  left: 50%; 
-  color: var(--primary-color); 
-  padding: 20px;
-  z-index: 10;
-  text-wrap: balance;
-  font-size: 1.2rem;
-  display: flex;
+.download-content {
+    color: var(--primary-color);
+    
+    z-index: 10;
+    text-wrap: balance;
+    font-size: 1.1rem;
+    display: flex;
     flex-direction: column;
     gap: 30px;
-}   
 
-.download-wrapper{
+    max-width: 100%;
+  }
+.download-wrappe{
+    display: flex;
+  }
+.download-wrapper img {
+  height: auto;
+  max-width: 100px;
+}
+.downloadDesk {
+  display: none;
+}
+@media (min-width: 768px) {
+  .download {
+    appearance: none;
+    position: relative;
+    display: flex;
+  }
+
+  .download img {
+    height: auto;
+    width: 100%;
+  }
+  .download-wrapper img {
+    height: auto;
+    max-width: 150px;
+  }
+  .download-content {
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    text-wrap: balance;
+    padding: 20px;
+    max-width: 40%;
+  }
+
+  .download-wrapper {
     display: flex;
     gap: 30px;
+  }
+  .downloadMobile {
+    display: none;
+  }
+  .downloadDesk {
+    display: initial;
+  }
 }
-.download-wrapper img{
-    height: auto;
-    width:150px;
+.downloadLineBar{
+  max-width: 120px;
+  height: auto;
+}
+@media (min-width: 1024px) {
+  .download-content {
+    top: 40%;
+    right: 5%;
+    max-width: 40%;
+    font-size: 1.3rem;
+  }
+  .downloadLineBar{
+    filter: grayscale(1) invert(1);
+    
+  }
 }

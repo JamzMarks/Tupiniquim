@@ -1,6 +1,9 @@
 .mid{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
 }
-
 .mid-section{
     display: flex;
     justify-content: center;
@@ -36,17 +39,30 @@
 .text-content p{
     color: #00000099;
 }
+.text-content span{
+    color: var(--primary-color);
+    font-weight: bolder;
+    cursor: pointer;
+}
 .text-content a{
     color: rgb(0, 110, 255);
 }
 
 @media (min-width: 768px) {
+    .mid{
+        gap: 0;
+        
+    }
     .mid-section{
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: row;
         font-size: var(--font-size-desktop);
+    
+    }
+    .text-content{
+        gap: 40px;
     
     }
 }

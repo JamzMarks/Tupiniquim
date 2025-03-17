@@ -6,6 +6,7 @@
 @import url("./src/styles/startRegister.css");
 @import url("./src/styles/midSection.css");
 @import url("./src/styles/download.css");
+@import url("./src/styles/thumb.css");
 
 :root {
   --font-size-mobile: 14px;
